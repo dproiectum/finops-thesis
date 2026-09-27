@@ -1,0 +1,9 @@
+# 1.2 — Current Process and Diagnosis
+
+The student reports that the current Power BI dashboard is used by FinOps, its management and managers of domains and subdomains in other teams. Dashboard access is therefore already part of the current process. The remaining question is whether each group can obtain the analyses it needs within its authorized scope and how changes to those analyses are made. Effective permissions and unmet requests have not yet been documented.
+
+In the change workflow described by the student, a supervisor reviews the dashboard and provides feedback. The manager relays requested changes to an external contributor, who implements them. The student reports that these handoffs lengthen corrections. No request log, elapsed-time series or iteration count is currently available to quantify that effect. The contributor's location describes the service arrangement; it does not explain the delay by itself.
+
+<!-- Note illustration C1 : insérer ici un schéma des étapes et rôles réels de la demande de modification, après confirmation par l'étudiant. Ne montrer aucune durée mesurée sans journal de demandes. Voir le plan des illustrations. -->
+
+This account identifies a process dependency that can be tested. A request may require business approval, technical interpretation, implementation and acceptance, each with its own waiting time. The analysis in section 9.2 considers whether closer Data Engineering support within FinOps could reduce some handoffs while preserving review and publication controls. That proposal remains an organizational hypothesis until comparable requests and effort are measured.

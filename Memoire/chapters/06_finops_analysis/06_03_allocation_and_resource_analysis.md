@@ -1,0 +1,11 @@
+# 6.3 — Allocation and Resource Analysis
+
+The allocation datamart groups January cost by cost center and service. Its groups reconcile to the EUR 912,000 billed total. However, EUR 875,320.02, or 95.98%, falls under cost center `Unknown`. Only EUR 36,679.98 is assigned to the three named synthetic centers in this view. The result shows limited attribution coverage: a center-level showback can display the data, but it cannot fairly allocate most of the amount to named budget owners. Improving the tagging or mapping rule would have greater immediate value than refining the chart used to present these groups.
+
+Application ownership has a different coverage pattern. Rows with a missing or placeholder `application_owner_id` represent EUR 146,649.15, or 16.08% of the same total. The cost-center and application-owner fields describe different organizational dimensions, so these percentages are not interchangeable or additive. An application owner can be present while the cost center is unknown. Neither field proves that a person has accepted budget responsibility; ownership definitions and access rights still require business validation.
+
+<!-- Note illustration F7 : placer ici deux barres indépendantes, 95,98 % de coût avec cost center Unknown et 16,08 % avec owner manquant/placeholder. Même dénominateur de 912 000 €, dimensions distinctes ; ne pas empiler les pourcentages. Données synthétiques locales, janvier 2025. -->
+
+The local executive summary counts 22,453 active resources and 59 consumed services. The most expensive services are Virtual Machines and Storage Accounts, which together account for 40.83% of billed cost as discussed in section 6.2. Resource rankings can help prioritize investigation, but a high charge does not by itself indicate waste. A resource's function, utilization, resilience requirement and commitment coverage must be checked before suggesting a change.
+
+These figures show why data quality and allocation are part of FinOps analysis rather than only pipeline checks. A technically reconciled EUR 912,000 total can still be weak evidence for accountability when most cost-center values are unknown. The finding is specific to the generated January dataset and must not be presented as a diagnosis of Technip Energies' actual tagging or allocation practice.

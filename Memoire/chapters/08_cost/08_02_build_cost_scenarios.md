@@ -1,0 +1,9 @@
+# 8.2 — Build-Cost Scenarios
+
+The build estimate groups effort by framing and architecture, dataset preparation, pipeline and contract implementation, analytical modeling, application development, security, testing and documentation. For each activity, the relevant record is the time actually spent by role and the scope of the resulting deliverable. Design and learning time should be visible as such; treating all PFE time as industrial delivery effort would obscure the difference between an academic prototype and a staffed deployment.
+
+Cloud resources used during construction belong in the same build boundary when they can be attributed to development or testing. Their valuation needs metered compute, storage and query consumption with the applicable dated price. Credits may lower cash paid during the PFE, but the underlying usage remains relevant to a later deployment scenario. Resources that also serve routine operation must be allocated by a documented rule to avoid counting the same charge twice.
+
+Three scopes can be compared once their inputs exist: the completed local prototype, the Databricks/GCP pilot and a prospective enterprise deployment. The last is a projection and would need assumptions about permissions, support, integration and procurement that are not established by the prototype. No numerical build total is presented because the effort log, authorized rates and complete platform charges have not yet been assembled.
+
+The organizational options in section 9.2 require a separate comparison at equivalent request volume and quality. External delivery, a dedicated FinOps Data Engineer and a mixed arrangement each involve implementation, review, handoff and possible rework. The student's report of delays identifies a question for measurement; it does not supply the time or cost data needed to rank these options.

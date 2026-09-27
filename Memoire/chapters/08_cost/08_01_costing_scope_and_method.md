@@ -1,0 +1,7 @@
+# 8.1 — Costing Scope and Method
+
+This chapter estimates the cost of building and operating the FinOps platform. Its economic boundary differs from the cloud expenditure analyzed in chapter 6: a charge represented in a FOCUS file is an analytical input, whereas Databricks, GCP services and human work are resources used to produce the analysis. A cost estimate must identify its period, currency, environment and unit of work before figures from different settings can be compared.
+
+Build cost covers design, implementation, tests, documentation and initial deployment. Operating cost covers recurring processing, storage, SQL queries, application use, monitoring and support. Human effort can be valued as recorded person-days by activity and role multiplied by an authorized loaded daily rate. Platform use can be valued from metered quantities and dated prices, with credits, discounts, taxes and any fixed charge shown separately. A shared resource requires an explicit allocation rule; otherwise its cost remains shared.
+
+No complete effort log, approved labor rate or full Databricks and GCP billing extract is currently indexed for this project. Sections 8.2 and 8.3 therefore define the inputs and boundaries of a reproducible estimate. They do not report a project budget or return on investment. A scenario may vary volume, frequency or staffing, but its assumptions must remain separate from observed consumption.

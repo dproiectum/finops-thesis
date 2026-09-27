@@ -1,0 +1,337 @@
+
+
+--- PAGE 1 ---
+MSc Data Engineering & Cloud Computing:
+PROJET DE FIN D’ÉTUDE // FINAL YEAR PROJECT
+January 2025
+1 GENERAL PRESENTATION
+The final year project is prepared simultaneously with the company mission, which normally serves as its
+essential foundation. It represents the culmination of the MSc program and, as such, contributes 12 ECTS
+credits towards obtaining the degree. The main objective of the Final Year Project is to demonstrate your
+expertise as a Data Engineer.
+Below are some contextual elements and objectives associated with the final year project.
+• General Objectives:
+– Demonstrate mastery of the skills acquired during the Master’s program.
+– Solve a concrete problem related to data management and analysis.
+– Integrate theoretical and practical approaches to Data Engineering.
+• Topic Selection:
+– Must be directly related to the fields of Data Engineering.
+– Preference should be given to innovative topics with high added value.
+– Possibility of collaboration with the company that hostssts the student for their apprenticeship.
+The topic of the final year project should primarily result from the student’s readings, encounters, prac-
+tical experiences, interests, and reflections. The process of selecting a topic can also be influenced by
+the work to be carried out in the company, the opinion of the apprentice tutor, and the student’s career
+aspirations.
+It would be beneficial to have a strong alignment between the work done in the company and the
+topic of the final year project. The greater the synergy, the easier the work becomes, with better support
+from the company as it is more relevant, and thus more assisted. The apprentice has every interest in
+seeking this synergy. However, it is still possible to propose a subject that goes in another direction if the
+student wishes to explore a new environment.
+Finally, a research oriented Final Year Project is also acceptable. If, during the research, the sudent
+submit a (completed) scientific paper, the same paper can be used as report. In such situation, the journal
+or conference must be indicated and the paper need only to respect the guideline of the submission and
+be in the field of data engineering.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 2 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+2 Writing and Structure of the Thesis
+While the format may vary depending on the issues addressed and potentially the empirical practices
+observed in the field, it is essential that the thesis includes the following elements:
+2.1 Problem Statement
+This section describes the questions raised and the identified challenges, specifically related to the man-
+agement, utilization, and analysis of data. Examples include:
+• A hypothesis to validate regarding the performance or biases of an analytical or predictive model.
+• A reconsideration or optimization of current data processing methods in a professional context.
+• An exploration of the limitations or opportunities presented by new technologies or approaches in
+data analysis.
+The problem statement must address the concrete needs of the company or professional community:
+• It should deal with a real and current issue, such as improving data quality, automating analytical
+processes, or implementing solutions that enable better decision-making through data.
+• It may include objectives such as cost reduction, increased model accuracy, or identifying new
+insights from existing data.
+• This problem statement must align with the technical or strategic priorities of the company while
+contributing to advancements in data analysis practices and knowledge.
+Clarifying a problem statement is not merely an academic requirement. In fact, formalizing this issue
+greatly helps the participant in their thinking process and makes their approach more effective. It is also
+a key way to demonstrate the ability to integrate approaches, methods, concepts, and tools developed
+during the MSc program through the final year project.
+Thus, projects that are purely descriptive (e.g., simply presenting the host company, its activities, oper-
+ations, and the tasks performed during the internship) should be avoided. Similarly, a purely theoretical
+reflection without any practical application is not acceptable. A project that only consists of empirical
+work (i.e., simple data collection) without any application of MSc-taught methods and concepts is also
+not suitable. Moreover, a project that artificially combines a variety of approaches, methods, concepts,
+and tools without prior analysis, real-world application, or clear connection to the problem statement
+should also be avoided.
+In essence, the final year project must take on a significantly broader and more analytical dimension
+than a simple report that the host company might require within the context of the internship.
+2.2 Methodology
+This section defines the analytical framework and the methods used for data collection, preparation,
+and processing. The methodological approach must be clearly described and justified, considering the
+specificities of the data and the project objectives.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 3 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+• Analytical Framework: Clearly define the technical and analytical objectives (e.g., building a pre-
+dictive model, optimizing a classification algorithm, or developing an interactive dashboard). Iden-
+tify key variables, relationships to explore, and performance indicators.
+• Data Collection Methods : Describe how the data was gathered (from existing databases, web
+scraping, IoT sensors, APIs, etc.), specifying its source, nature (structured/unstructured), volume, and
+quality.
+• Data Processing and Analysis : Justify the techniques used for data preparation (cleaning, normal-
+ization, handling missing values) and the tools or algorithms applied for analysis (statistical models,
+machine learning, data visualization).
+Complete transparency in the approach is essential. This includes:
+• A clear explanation of the steps taken to ensure data integrity and result reproducibility.
+• Documentation of all methodological choices, such as algorithm selection or hyperparameter tun-
+ing, with justification.
+• When mock-up data/schemas if data are confidentials.
+• Clear explanation of which generative AI is used, if any, the prompt used and on which part.
+The limitations of the methodology must be identified, mentioned, and explained. This may include:
+• Biases or inadequacies in the available data.
+• Simplifying assumptions made for the analysis.
+• Technical or time constraints that influenced the project’s scope.
+• This structured framework ensures the scientific rigor and operational relevance of the results pro-
+duced in the final year project.
+For confidentiality reasons, it is acceptable to anonymize the name of the company and/or the oper-
+ations used in the thesis.
+Clarifying the methodology is crucial. It demonstrates the participant’s ability to critically assess the
+problem at hand. It also enables the reader to validate the conclusions presented and recognize their
+potential limitations.
+2.3 Results and conclusion
+The results of a final year project should not be limited to a mere description of a situation. They must
+be analyzed and provide concrete insights in response to the initial problem statement. Recall that data
+(and result) themselves are meaningless, but information and knowledge (your expertise) are valuable.
+Results stem from the methodology applied to a given problem. It is essential to present them appropri-
+ately. For example, if interviews were conducted with various stakeholders, the interview reports may be
+included in an appendix. However, the main thesis should contain a synthesized analysis of the collected
+data and a presentation of the key findings.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 4 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+Based on the analysis results, a set of recommendations should be formulated. These recommenda-
+tions must be prioritized. Prioritization can be based on factors such as:
+• Nature (technical, commercial, organizational, etc.).
+• Implementation complexity (from easiest to most complex).
+• Urgency (short-term, medium-term, or long-term).
+• Finally, it may be valuable to explore whether the conclusions drawn from the project could be
+extended to other similar situations.
+2.3.1 Other Essential Sections
+Every final year project must include an executive summary outlining the problem statement, analysis
+methodology, and key conclusions.
+The thesis should also provide a brief presentation of the host company, including details such as ac-
+tivities, revenue, workforce size, products, locations, and organizational structure. This section is mainly
+intended to provide context for the participant’s work, specifying their role within the organization and
+the company’s position in its competitive environment.
+• A glossary clarifying technical terms or abbreviations used in the text is recommended.
+• A table of contents is essential.
+• A bibliography is mandatory and must include scientific and/or academic references, not just pro-
+fessional sources.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 5 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+3 Formal Aspects of the Thesis
+3.1 Length of the Thesis
+The main body of the thesis should be approximately 50 pages (excluding appendices, cover pages,
+acknowledgments, executive summary, table of contents, and bibliography). The entire document must
+be paginated. If there are appendices, an appendix table of contents is mandatory. Each appendix
+must have a title.
+3.2 Cover Page
+The first page must be printed on aivancity letterhead paper. A digital copy of this letterhead will be sent
+to you via email. This cover page must include the following elements:
+• Aivancity logo
+• Host company
+• Final project title
+• Final Year Project
+• MSc Data Management
+• Graduating Class 20nn
+• Participant: First Name and Last Name
+• Supervising Professor: Title, First Name, and Last Name
+If you need a LATEXtemplate, contact us as soon as possible so we can provide it to you.
+3.3 Bibliographic References, Plagiarism, and Use of Generative AIs
+You must rely on an appropriate bibliography. This allows you to expand on topics covered in the MSc
+program and possibly initiate new discussions.
+References should be cited within the main text, appearing in parentheses with the author’s name
+and publication date (whether it’s a book or an article). Example: (Dumoulin, Flipo et al., 1998). The IEEE
+convention is also accepted (initials of authors and date: DF98). However, your style must be consistent
+through the thesis.
+At the end of the thesis, a "Bibliographic References" section should list all cited documents in full
+format. Example:
+Prunier R., Mourel P . (1996), Financial Engineering in the Bank-Enterprise Relationship, Economica, pp. 73-
+75.
+Be cautious when including quotations, whether from articles, books, or interviews. For any information
+obtained from the Internet, a precise source must be identified both in-text (in parentheses) and in the
+bibliography.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 6 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+Any excerpt from a book, article, website, or any public or private source that is included in the the-
+sis—no matter how short—has a high probability of being detected by plagiarism detection software. If
+such an excerpt is not properly cited (both in-text and in the bibliography), the plagiarism will be con-
+firmed, and the final project will receive a permanent grade of 0 (zero), with no possibility of a second
+chance, meaning the student will be permanently ineligible for graduation.
+3.4 Use of Generative AI (e.g., ChatGPT and similar tools)
+The use of generative AI is allowed for the final project, but only under strict conditions:
+• Full Transparency
+• Any use of generative AI must be explicitly mentioned, with a clear description of how it was used
+(e.g., to generate ideas, write a paragraph, analyze data, create a visualization, etc.).
+• Systematic Citation
+Any AI-generated content must be referenced, ideally by specifying:
+• The tool used
+• The date of generation
+• A screenshot or copy of the prompt used (included as an appendix if necessary).
+• Reasonable Use
+AI tools should be considered as assistive tools, not substitutes for intellectual work. The project must
+primarily reflect the skills, ideas, and efforts of the student.
+Ethical Considerations:
+• AI use must comply with principles of integrity and responsibility.
+• It is strictly forbidden to use AI for:
+• Generating fake or misleading content
+• Bypassing methodological requirements
+• Limiting Overuse
+Excessive reliance on AI (e.g., generating an entire report or conducting all analyses) will be consid-
+ered a violation of academic integrity. Important: AI-generated work may be poorly received if it lacks
+meaning or does not reflect critical thinking supported by personal expertise and reflection. AI use does
+not replace the need for solid reasoning, analysis, and synthesis skills, which are fundamental to academic
+work. Content that is meaningless, even if well-written, will be penalized.
+Finally, the school reserves the right to use AI detection tools to analyze submitted work. Excessive or
+unjustified AI use will be penalized, potentially leading to non-validation of the thesis.
+These rules are in place to promote a responsible and ethical use of digital tools, ensuring the au-
+thenticity and quality of academic work. Any violation will be treated as serious academic misconduct,
+carrying the same severe consequences as plagiarism.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 7 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+4 The Relationship Between the Student and the Supervising Professor
+The organization of the relationship between the student and the supervising professor must be mutually
+defined by both parties. However, some key steps are essential. The supervising professor will be particu-
+larly attentive to ensuring these commitments are met.
+4.1 First Step
+The student must present and have the following elements validated by their supervisor before the end of
+May:
+• Research Question: Three proposed formulations must be submitted.
+• Research Problem Statement: A 2 to 3-page document (version 1).
+• Bibliographic References: A total of 10 references, including at least 5 scientific articles.
+• Brief Presentation of the Planned Empirical Section (1 to 2 pages):
+– Describe the project: Data, methods, expected results, type(s) of deliverables.
+– Describe the empirical study: Why this study? What empirical methods? (Type of data col-
+lected, methods of analysis, hypotheses).
+4.2 Second Step
+The student must submit an intermediate document including before August:
+• Problem Statement: An updated version.
+• Detailed Outline: A structured and precise framework for the thesis.
+• Theoretical Section: A literature review summarizing the selected and enriched bibliographic refer-
+ences.
+• Implementation Phase:
+– Types of data to be collected.
+– Detailed presentation of the planned AI/Data techniques.
+– Description of the tools or solutions that will be implemented.
+This document must be validated by the supervisor before the student can proceed.
+4.3 Interaction with the Supervisor
+Once the previous steps are validated, the student can move forward with finalizing their thesis project
+and writing the dissertation.
+The student is solely responsible for reaching out to their supervisor for advice or validation. Under no
+circumstances is the supervisor expected to follow up with the student to ensure progress.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 8 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+4.4 Submission and Defense
+The final document must be submitted on the exact date specified by the program administration, as well
+as on the scheduled defense day. Any late submission or failure to meet deadlines will be sanctioned in
+accordance with the applicable regulations.
+5 The supervising professor
+The supervising professor plays a methodological guidance role. They are both a source of expertise for
+the student and the guarantor of the application of rules concerning the completion of the final project
+and the defense.
+Throughout the supervision process, the professor’s assessment focuses on the validity conditions and
+limitations of the work carried out, considering all or some of the following points:
+• Is the research problem relevant? Well-formulated? Clearly defined? Understandable?
+• Are the methods used valid for the current situation? Could other methods have been used, and if
+so, why were they not?
+• Are the results obtained debatable? In light of these results, would it be relevant to supplement
+the methods used? How? With which other methods? Would this lead to refining, relativizing, or
+challenging the results?
+• Is the student’s reasoning relevant? How reliable is it? What are its limitations?
+• Are the results obtained understandable? Can they be compared to other, more general results or
+results obtained in different circumstances? Does this comparison or confrontation give a different
+meaning to the results?
+• To what extent can the approach taken and the methods employed be generalized?
+• Is the structure of the thesis (see next section) acceptable?
+• Is the research problem relevant? Well-formulated? Clearly defined? Understandable?
+• Are the methods used valid for the current situation? Could other methods have been used, and if
+so, why were they not?
+• Are the results obtained debatable? In light of these results, would it be relevant to supplement
+the methods used? How? With which other methods? Would this lead to refining, relativizing, or
+challenging the results?
+• Is the student’s reasoning relevant? How reliable is it? What are its limitations?
+• Are the results obtained understandable? Can they be compared to other, more general results or
+results obtained in different circumstances? Does this comparison or confrontation give a different
+meaning to the results?
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 9 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+• To what extent can the approach taken and the methods employed be generalized?
+• Is the structure of the thesis (see next section) acceptable?
+6 The Thesis Defense
+6.1 The Defense: right to Defend and Organization
+The final project defense takes place in the presence of the supervising professor and a qualified assessor
+(often the Program Director or a permanent professor at Aivancity). If the student wishes, their internship
+supervisor from the host company or, failing that, a company representative may attend, though they do
+not participate in the deliberation.
+The supervising professor alone decides whether to grant the student the right to defend their final
+project. This defense is only permitted once the final project is deemed definitively acceptable, based on
+the criteria outlined above.
+The supervising professor gives their approval for the student to proceed with the defense.
+6.2 During the Defense
+The student must present their approach and results within 20 minutes. This presentation should not simply
+be a reading of the final project. The presentation format will play a significant role in the evaluation.
+A 20-minute period will follow for questions and discussion with the jury members. Finally, the jury will
+provide a 10-minute debriefing for the student.
+At the end of the defense, the jury will assign a grade for both the final project and the defense.
+6.3 Confidentiality of the Final Project
+The final project written as part of the MSc program may contain confidential information that the com-
+pany wishes to keep undisclosed. In such cases, and upon the company’s request, a confidentiality
+agreement co-signed by the company, the student, and Aivancity may be established.
+6.4 Final Words
+Your project must be directly related to the subjects covered in the MSc program. While this may seem
+obvious, it can be tempting to be swayed by a company’s name, reputation, or activities, even if the final
+project would be far removed from the topics covered in the MSc. Resist this temptation!
+Your project must allow you to develop a genuine final project. Ensure that the company hosting you
+fully understands the concept of a final project. You should quickly define the research problem you will
+work on. Ideally, the company should allow you some time to start writing your thesis during the final
+month. You can negotiate this, but you must not impose it.
+Confidentiality can be an issue. You must respect confidentiality, but also ensure that it does not
+excessively limit your ability to write your final project. Address this issue at the beginning of your internship.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence
+
+--- PAGE 10 ---
+MSc Data Engineering & Cloud Computing: Projet de Fin d’étude // Final Year Project
+If the company does not want your work to be accessible to anyone other than the jury, this should be
+stated on the cover page and in the preface of your thesis. A confidentiality letter can also be signed by
+the MSc program director.
+The success of your project also depends on your support system. A supervising professor is assigned to
+you based on your project topic. While they will evaluate you at the defense, they are also a fundamental
+methodological support during your internship. Additionally, it is important to have a mentor within the
+company (such as an internship supervisor or apprenticeship tutor) who can guide you and help with
+daily challenges. It can be difficult to manage such a project on your own.
+Finally, remember that an MSc final project can serve as a real career springboard. It should be your
+business card, showcasing your ability to synthesize information, your technical skills, and your motivation
+to enter the professional world.
+aivancity School for Technology, Business & Society Paris-Cachan
+Advancing Education in Artificial Intelligence

@@ -1,0 +1,7 @@
+# 1.4 — Objectives, Scope and Constraints
+
+The project aims to turn FOCUS cost-and-usage files into traceable analytical products. Its technical objectives are to validate a versioned data contract, preserve source lineage, reconcile charges across Bronze, Silver, Gold and datamarts, and make the resulting measures available to a reporting application. The evaluation also examines whether users can answer defined FinOps questions from these products and whether the platform records enough information to diagnose a failed or repeated run.
+
+The empirical dataset begins with anonymized Azure FOCUS files and extends them synthetically. One local DuckDB and Streamlit prototype supports January 2025 validation. The active cloud implementation uses Databricks on GCP with separate DEV and PROD catalogs. These settings serve different tests; a local result cannot establish cloud behavior. The enterprise Azure architecture considered in the initial framing remains a design context rather than an implemented deployment.
+
+Confidentiality prevents publication of the organization's detailed billing history. The limited reference data and synthetic extension constrain business conclusions, especially claims about savings or forecasting. Time, available cloud resources and incomplete access evidence constrain the performance and security evaluation. Sections 3.3 and 7 distinguish the tests completed within these limits from the tests still required.
