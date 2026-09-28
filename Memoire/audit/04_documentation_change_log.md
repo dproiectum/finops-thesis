@@ -1,5 +1,43 @@
 # Journal des changements documentaires
 
+## 2026-09-28 — Consolidation du mémoire dans son dépôt Git
+
+- Comparaison des deux dossiers : la copie `PFE/Memoire` contient neuf documents modifiés et deux nouvelles figures ; aucun fichier n'existe uniquement dans `finops-thesis/Memoire`.
+- Consolidation des contenus dans `PFE/finops-thesis/Memoire/`, au sein du dépôt déjà relié à `dproiectum/finops-thesis` ; conservation de l'historique Git existant.
+- Retrait de la copie parallèle `PFE/Memoire` du dossier de travail par déplacement vers une sauvegarde temporaire, après comparaison des empreintes des fichiers.
+- Ajout des instructions Git et mise à jour des chemins de navigation du workspace. Cette consolidation ne valide pas les résultats techniques ou le contenu du schéma ajouté par l'étudiant.
+
+## 2026-09-28 — Section 3.2 recentrée sur la simulation locale
+
+- Retrait du tableau local/GCS/Volume, du RAW partagé DEV/PROD et des détails de remplacement Silver/Gold de 3.2.3, à la demande de l'étudiant : cette étape explique la méthode avant l'introduction des technologies cloud.
+- Retour à une présentation concise de la sortie locale et de sa protection, avec le seul nouveau chemin `datasets/focus/monthly/billing-YYYY-MM.parquet`.
+- Conservation des scénarios, résultats et limites ; clarification de la distinction Daily/Monthly sans prescrire une plateforme de déploiement. Retrait de la note d'illustration cloud de cette section.
+- Aucun changement au générateur, aux données ou à la configuration de la plateforme.
+
+## 2026-09-28 — Harmonisation effective des chemins locaux et cloud
+
+- À la demande de l'étudiant, déplacement des 18 Parquet Monthly directement sous `FinOps Data Generator/datasets/focus/monthly/`, sans régénération ni modification de leurs noms ; suppression des anciens dossiers `year=`/`month=` devenus vides.
+- Vérification SHA-256 de chaque fichier avant et après déplacement ; les contenus restent identiques. Mise à jour du champ `output_file` des 18 manifests et sauvegarde des manifests précédents sous `/private/tmp/finops-monthly-layout-E6d38P/`.
+- Modification du générateur et ajout d'un test de chemin pour que les prochaines générations utilisent la même structure que GCS. Les Daily gardent `daily/YYYY/MM/YYYY-MM-DD.parquet`.
+- Mise à jour des sections 3.2.3 et 5.1, du README du générateur et des références documentaires du POC. Les entrées historiques ci-dessous décrivent l'organisation antérieure.
+- Précision dans le README des annexes : fichiers image sous `annexes/figures/architectures/`, figure synthétique du modèle en 4.5.2, détail facultatif en annexe du PDF.
+- Aucun changement dans GCS ou Databricks et aucun push GitHub réalisé.
+
+## 2026-09-28 — Clarification des chemins mensuels en 3.2.3
+
+- Vérification du chemin local contre les fichiers présents et la fonction `monthly_output_path` du générateur.
+- Remplacement du chemin cloud relatif ambigu par les emplacements complets GCS et Volume définis dans la configuration de la plateforme et les scripts RAW.
+- Distinction explicite entre le transfert local → GCS et l'accès au même objet par le Volume externe ; ajout des chemins des manifests et archives locaux.
+- Aucun fichier de données déplacé, aucun code de traitement modifié et aucune vérification distante GCS revendiquée.
+
+## 2026-09-28 — Relecture de la méthode et de la provenance au chapitre 3
+
+- Suppression de l'affirmation initiale reliant directement les références Azure à l'historique confidentiel de l'entreprise ; distinction entre les fichiers d'entrée, leur anonymisation, la documentation Microsoft du schéma et l'historique fictif généré.
+- Explicitation de la méthode de conception et d'évaluation, avec comportements attendus, sorties observables et limites de preuve.
+- Vérification des descriptions des contrôles Daily et des scénarios mensuels contre le code du générateur ; les résultats locaux du 27 septembre sont conservés, sans nouvelle exécution revendiquée.
+- Précision que les montants des scénarios sont définis dans le simulateur et que seule la validation du corpus `no_change` est documentée.
+- Ajout du protocole de comparaison de compute et des limites d'attribution des coûts ; origine exacte des deux fichiers de référence à confirmer avec l'étudiant.
+
 ## 2026-09-28 — Nettoyage des liens, figures et planning du projet
 
 - Suppression de l'unique hyperlien `.md` externe encore présent dans le cadrage historique ; ce document renvoie désormais à la section 4.3 pour la justification technologique courante.

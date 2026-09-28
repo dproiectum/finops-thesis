@@ -1,5 +1,14 @@
 # Mémoire PFE — espace documentaire évolutif
 
+## Dossier de travail unique et GitHub
+
+Le dossier de travail est `PFE/finops-thesis/Memoire/`. Le dépôt Git se trouve
+dans `PFE/finops-thesis/` et son origine est
+`https://github.com/dproiectum/finops-thesis.git`. Modifier les documents dans
+ce dossier uniquement ; ne pas recréer une copie parallèle `PFE/Memoire/`.
+Les commandes `git status`, `git pull` et `git push` se lancent depuis la
+racine du dépôt `finops-thesis`.
+
 ## Langue du document final
 
 Le mémoire final, son plan d'assemblage et tous les fichiers de `chapters/` sont rédigés en anglais. Les échanges avec l'étudiant et les registres de travail internes peuvent rester en français ; ils ne sont pas assemblés dans le PDF. Toute nouvelle section destinée au mémoire doit être rédigée en anglais dès sa création.

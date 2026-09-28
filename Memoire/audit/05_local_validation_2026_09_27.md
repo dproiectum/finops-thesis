@@ -68,3 +68,26 @@ GROUP BY service_name ORDER BY SUM(total_billed_cost) DESC LIMIT 2;
 The center and owner measures use different dimensions and must not be added. These results show allocation coverage and cost concentration in synthetic data, not actual company expenditure or realized savings.
 
 `ContractedCost` was checked separately in read-only mode from `datamart.dm_savings_monthly` for `billing_month = '2025-01'`. The underlying decimal value was 1,044,652.848686590563 EUR, rounded to cents above. This verifies the value used in chapter 6; it does not validate the business interpretation of any cost-column difference.
+
+## EVD-013 — Layout migration and revalidation on 28 September 2026
+
+The 18 Monthly Parquet files were moved from calendar-partition directories to
+`FinOps Data Generator/datasets/focus/monthly/billing-YYYY-MM.parquet`. Every
+file matched its manifest SHA-256 before and after the move. Only each
+manifest's `output_file` field was changed; no Parquet was regenerated. The
+previous manifests were backed up under
+`/private/tmp/finops-monthly-layout-E6d38P/` before modification. Empty legacy
+directories were removed; their Finder metadata was retained in that backup.
+
+Commands from the generator project, with `PYTHONPATH=src`:
+
+- `python3 -m unittest discover -s tests -v`: 5 tests passed, including the new
+  assertion that Monthly output matches the cloud layout.
+- `python3 -m finops_generator.validate_monthly_history`: 18 months,
+  January 2025–June 2026, 3,279,613 rows and EUR 18,220,080; passed.
+- `python3 -m finops_generator.validate_daily_history`: 608 files,
+  1 January 2025–31 August 2026, 3,664,261 rows and EUR 20,357,040; passed.
+
+PyArrow emitted non-fatal CPU-cache inspection warnings under the execution
+sandbox. All three commands exited successfully. This is local revalidation
+after a layout change, not a new GCS or Databricks execution.

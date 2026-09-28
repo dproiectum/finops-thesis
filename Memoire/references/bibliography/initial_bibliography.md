@@ -80,6 +80,9 @@ This initial bibliography supports the first academic framing of the PFE. It com
 24. Microsoft. (n.d.). *Use Performance Analyzer to examine report performance*. https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-performance-analyzer (accessed 27 September 2026).
    - Use: Measurement categories in the proposed Power BI diagnosis in section 7.2.
 
+25. Microsoft. (n.d.). *FOCUS cost and usage details file schema*. https://learn.microsoft.com/en-us/azure/cost-management-billing/dataset-schema/cost-usage-details-focus (accessed 28 September 2026).
+   - Use: Field definitions for Azure FOCUS in section 3.1; this page does not establish the provenance of the project's two reference Parquet files.
+
 ## Minimum Requirement Check
 
 Référence professionnelle complémentaire ajoutée le 15 septembre 2026 :
@@ -87,8 +90,8 @@ Référence professionnelle complémentaire ajoutée le 15 septembre 2026 :
 - Dehghani, Z. (2020, 3 décembre). *Data Mesh Principles and Logical Architecture*. MartinFowler.com. [Article](https://martinfowler.com/articles/data-mesh-principles.html). Consulté le 15 septembre 2026.
   - Usage : distinguer autonomie de consommation, autonomie de production et principes du Data Mesh dans la section 4.2. Source professionnelle fondatrice, non comptée comme article scientifique.
 
-- Total references listed: 25.
+- Total references listed: 26.
 - Scientific/academic references: 7.
-- Official/professional references: 18.
+- Official/professional references: 19.
 
 The school requires 10 references including at least 5 scientific articles. This initial bibliography satisfies the quantity requirement, but the final thesis should still refine source quality, in-text citation style, and relevance by chapter.
