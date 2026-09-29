@@ -1,6 +1,6 @@
 # Bibliography and Source Register
 
-This register retains the sources gathered for the PFE. In the thesis, a short italic source line identifies the author or organization and links the document title near the supported passage. Full entries give the available date, title, URL or DOI, and access date for web documentation. An access year is not treated as a publication year. Chapter PDFs include only references cited in that chapter; background readings remain here without implying support for an uncited claim.
+This register retains the sources gathered for the PFE. The final thesis should use consistent author–date citations in the text and full bibliography entries with the available publication date, title, URL or DOI, and access date for web documentation. An access year is not treated as a publication year. Existing short italic source lines elsewhere in the draft still need conversion before final submission. Chapter PDFs should include only references cited in that chapter; background readings remain here without implying support for an uncited claim.
 
 ## Official and Professional References
 
@@ -97,10 +97,13 @@ This register retains the sources gathered for the PFE. In the thesis, a short i
 29. FinOps Foundation. (n.d.). *Invoicing & Chargeback*. https://www.finops.org/framework/capabilities/invoicing-chargeback/ (accessed 29 September 2026).
    - Use: Distinction between showback and chargeback in section 2.4.
 
+30. Technip Energies. (2026, 10 March). *Technip Energies publishes its 2025 Annual Report*. https://investors.technipenergies.com/news-releases/news-release-details/technip-energies-publishes-its-2025-annual-report (accessed 29 September 2026).
+   - Use: Group activities, 2025 revenue, workforce and country coverage in section 1.1; the figures are not specific to Technip Energies France.
+
 ## Citation Coverage Check
 
-- Total references listed: 29.
+- Total references listed: 30.
 - Scientific/academic references: 7.
-- Official/professional references: 22.
+- Official/professional references: 23.
 
 The school requires 10 references including at least 5 scientific articles. The register contains enough candidate entries, but its seven scientific readings are not currently cited in the chapter text. Their presence here alone does not satisfy the final thesis's citation requirement. They need verified, relevant integration before final submission; the chapter PDFs do not include uncited entries.

@@ -2,13 +2,13 @@
 
 Illustration planning for all 40 sections is in [the illustration plan](../plan/illustrations_plan_2026_09_27.md). Chapter 3 uses its explanatory table without additional figures. Remaining editorial comments elsewhere identify only selected figure or appendix-evidence locations and must be excluded from the final PDF.
 
-> Status: `WORKING`. The main text should be approximately 50 pages. Detailed procedures, screenshots and lengthy outputs belong in appendices.
+> Status: `WORKING`. The school recommends approximately 50 pages for the main text. Draft each argument for clarity and concision before adjusting the final layout; detailed procedures, screenshots and lengthy outputs belong in appendices.
 
 The student sets a working limit of 60 pages. The school guide recommends approximately 50 pages for the main body, excluding supplementary matter. The final page count must be checked after assembly; no page total is inferred from Markdown length alone.
 
 ## Argument
 
-**Working question:** How can a reliable and governed FinOps data platform be built and evaluated for cloud-cost analysis and user autonomy? The final wording requires supervisor approval (Q-002).
+**Working question:** How can a governed FinOps data platform transform FOCUS cost-and-usage data into reliable analytical products for cloud showback, and what operational added value does the resulting system demonstrate? The final wording requires supervisor approval (Q-002).
 
 The thesis distinguishes design and code, local POC validation, cloud execution supported by retained evidence, and capabilities still to be tested. Synthetic data alone cannot establish realized savings, production-grade security or superior performance.
 
@@ -16,12 +16,12 @@ The thesis distinguishes design and code, local POC validation, cloud execution 
 
 ### 1. General introduction and professional context
 
-- **1.1 Professional Context and Stakeholder Roles:** organization, FinOps team, mission and confidentiality.
-- **1.2 Current Process and Diagnosis:** existing users, change-request workflow, observed limitations and unmet needs.
-- **1.3 Problem Statement and Research Questions:** data reliability, governed self-service and decision support.
-- **1.4 Objectives, Scope and Constraints:** measurable objectives, available data and PFE boundaries.
-- **1.5 Summary of Requirements:** needs and acceptance criteria; M01–M10 remain detailed in the framing documents.
-- **1.6 Thesis Structure:** approach and the role of each chapter.
+- **1.1 Professional Context and the FinOps Team:** host organization, team roles, author's position and Cloud Showback.
+- **1.2 Current Reporting Process and Observed Difficulties:** change dependencies, dashboard latency, data quality and scoped distribution.
+- **1.3 Problem Statement and Research Question:** one question and the operational meaning of added value.
+- **1.4 Objectives, Implemented Artifacts and Scope:** implemented artifacts and limits of the synthetic study.
+- **1.5 Assessment Criteria and Evidence Boundaries:** what the project can substantiate and what still needs measurement.
+- **1.6 Thesis Structure:** the role of each subsequent chapter.
 
 ### 2. FinOps and cloud economics
 
