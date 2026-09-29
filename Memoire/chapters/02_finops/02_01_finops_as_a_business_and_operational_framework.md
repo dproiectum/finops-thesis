@@ -2,7 +2,9 @@
 
 FinOps provides the business framework for interpreting the project's cost data. A pipeline can reconcile charges technically while leaving allocation, ownership or business meaning unresolved. The platform therefore supplies data for financial questions as well as for reporting.
 
-The [FinOps Foundation framework](https://www.finops.org/framework/) defines FinOps through collaboration between engineering, finance and business functions, timely data and financial accountability. The project applies this framework to a bounded problem: preparing governed cost products and examining what decisions those products can support. It does not evaluate the maturity of the organization's full FinOps practice.
+The FinOps Foundation framework defines FinOps through collaboration between engineering, finance and business functions, timely data and financial accountability. The project applies this framework to a bounded problem: preparing governed cost products and examining what decisions those products can support. It does not evaluate the maturity of the organization's full FinOps practice.
+
+*Source: FinOps Foundation, [FinOps Framework](https://www.finops.org/framework/).*
 
 ## Why cloud economics require FinOps
 

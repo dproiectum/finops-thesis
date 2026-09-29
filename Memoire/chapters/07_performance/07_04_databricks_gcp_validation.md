@@ -8,7 +8,7 @@ The acceptance criteria follow the data path. The RAW file must be readable; Bro
 
 ## 7.4.2 Evidence currently available
 
-The working Belgium completion note states that the four catalogs exist, that a monthly backfill for January 2025–June 2026 and DEV/PROD controls succeeded, and that the first 1 July 2026 Daily file was loaded in DEV with `promote_to_prod=false`. Sections 3.1–3.2 independently report local validation of eighteen `no_change` billing files through June 2026 and Daily files through August 2026. These source counts can be compared with the cloud tables once the relevant Run IDs and query outputs are captured. The cloud claims remain reported execution awaiting primary artefacts, rather than independently reproduced thesis measurements.
+The working Belgium completion note states that the four catalogs exist, that a monthly backfill for January 2025–June 2026 and DEV/PROD controls succeeded, and that the first 1 July 2026 Daily file was loaded in DEV with `promote_to_prod=false`. Section 3.2.3 independently reports local validation of eighteen `no_change` billing files through June 2026 and Daily files through August 2026. These source counts can be compared with the cloud tables once the relevant Run IDs and query outputs are captured. The cloud claims remain reported execution awaiting primary artefacts, rather than independently reproduced thesis measurements.
 
 | Capability | Current record | Evidence needed for a validated thesis claim |
 |---|---|---|
@@ -18,7 +18,7 @@ The working Belgium completion note states that the four catalogs exist, that a 
 | Monthly close DEV → PROD | Module and notebook exist; dedicated Classic Job absent | Billing-arrival guard; both runs; `BEFORE/SOURCE/AFTER`; equality and failure recovery |
 | Databricks App | Source and deployment guide exist | Deployment record; page checks; Warehouse and Unity Catalog permissions |
 
-<!-- Note illustration F8 : après collecte des artefacts primaires, ajouter une vue synthétique des runs DEV/PROD : Job/Run IDs, commit, mois, volumes, BilledCost et résultat de réconciliation. Placer 1–2 captures ciblées du Job et des contrôles en annexe. Une icône de succès seule ne suffit pas. -->
+<!-- Note preuve F8 : conserver le tableau dans le corps du mémoire. Après collecte, placer seulement les captures de runs et de contrôles réellement utiles en annexe, avec Job/Run IDs, révision, période et résultats. Ne pas ajouter une seconde vue synthétique qui répète ce tableau. -->
 
 ## 7.4.3 Daily-to-close experiment
 

@@ -18,7 +18,7 @@ For a closed month, the detailed `billing-YYYY-MM.parquet` file becomes the auth
 
 Historical backfill invokes the same monthly-close function sequentially over an inclusive month range. Month-scoped Delta replacement is atomic for each target table operation, but the full sequence across Silver, Gold, datamarts and OPS is not one multi-table transaction. Audit states, reconciliation and rerun procedures are therefore needed after a failure between steps. A dedicated Classic monthly-close DEV-to-PROD Job remains to be constructed and tested. Automatic RAW archival is disabled so that a DEV close cannot remove a bill still needed by PROD; optional archive code is not part of the documented normal close.
 
-<!-- Note illustration C4 : si nécessaire, montrer découverte du fichier, validation DEV, promotion PROD et rejeu sans doublon ; distinguer le chemin implémenté du run complet encore à prouver. -->
+<!-- Note preuve C4 : ranger une capture réellement exécutée du graphe de tâches en annexe si elle complète les contrôles du chapitre 7. Ne pas ajouter un schéma de pipeline dans le corps qui répète le HLD ; une configuration seule ne prouve pas un run. -->
 
 ## 5.3.3 Data contract, Gold model and datamarts
 
@@ -44,4 +44,4 @@ The separate cloud application under `FinOps Cloud Data Platform/apps/finops_das
 
 The deployment guide specifies narrow read permissions for the application service principal. Source code and prescribed grants do not establish effective access: deployed page behavior, Warehouse permissions, direct SQL access and any Row-Level Security claim require tests and screenshots. The local Streamlit AppTest result in section 5.2 is not evidence for this application.
 
-<!-- Note illustration C5 : ajouter une capture de la Databricks App seulement après contrôle du déploiement, des pages et des permissions ; conserver environnement, date et période dans la preuve. -->
+<!-- Note illustration C5 : retenir une capture de la Databricks App seulement après vérification du déploiement, des pages et des permissions. Si elle est choisie comme unique capture du dashboard dans le corps, ne pas y ajouter aussi F5. Indiquer environnement, période et données synthétiques ; conserver les détails de preuve séparément. -->

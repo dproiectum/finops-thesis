@@ -12,7 +12,9 @@ The implementation subsequently converged on Databricks with GCP object storage 
 
 ## 4.3.3 Storage and processing choices
 
-The independent generator publishes Parquet files as the shared RAW input. [Apache Parquet](https://parquet.apache.org/docs/overview/) specifies a column-oriented file format for storage and retrieval. The Databricks pipeline publishes managed Delta tables in Bronze, Silver and Gold, where month-level replacement and table history are required. [Delta Lake](https://docs.databricks.com/gcp/en/delta/) extends Parquet data files with a transaction log; the two formats therefore serve different roles in this design rather than being mutually exclusive alternatives. A replacement is atomic for an individual Delta table operation, while the entire multi-table pipeline needs audit and recovery logic.
+The independent generator publishes Parquet files as the shared RAW input. Apache Parquet specifies a column-oriented file format for storage and retrieval. The Databricks pipeline publishes managed Delta tables in Bronze, Silver and Gold, where month-level replacement and table history are required. Delta Lake extends Parquet data files with a transaction log; the two formats therefore serve different roles in this design rather than being mutually exclusive alternatives. A replacement is atomic for an individual Delta table operation, while the entire multi-table pipeline needs audit and recovery logic.
+
+*Source: Apache Parquet, [Overview](https://parquet.apache.org/docs/overview/); Databricks, [What is Delta Lake in Databricks?](https://docs.databricks.com/gcp/en/delta/).*
 
 Python and PyArrow support deterministic file generation and schema checks. SQL defines the Gold model and datamarts, and PySpark coordinates their execution in Databricks. YAML records the versioned data contract, while DBML documents the dimensional design. DuckDB serves the frozen local POC; its results are evidence for that environment only.
 

@@ -2,6 +2,8 @@
 
 This is an internal evidence note, not a thesis chapter. It records reproducible local observations made while drafting sections 3.1, 3.2 and 6.2–6.3. It does not establish Databricks execution or real company spending.
 
+After the chapter 3 reorganization and condensation on 29 September, dataset preparation and coverage are reported in section 3.2, with validated volumes in section 3.2.3. The original section references above describe the drafting context on 27 September, not the current assembly order.
+
 ## EVD-011 — Current Daily history
 
 Environment: Python 3.14, pandas 3.0.5, PyArrow 24.0.0. Command from `FinOps Data Generator`: `PYTHONPATH=src python3 -m finops_generator.validate_daily_history`. The validator completed successfully and wrote `metadata/daily/daily_monthly_validation.csv`.

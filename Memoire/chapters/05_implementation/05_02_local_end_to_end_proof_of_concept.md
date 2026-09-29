@@ -18,4 +18,4 @@ Materialization keeps repeated analytical expressions outside the interface and 
 
 The POC's Streamlit application reads DuckDB datamarts without writing to them. Its Knowledge Base explains column names and cost formulas alongside the analytical views. Streamlit AppTest exercised eight subviews for January 2025, and the displayed EUR 912,000 billed cost and 164,145 rows reconcile with the local checks. Section 7.1 presents the validation scope. This does not establish effective cloud permissions, Row-Level Security or the behavior of the separate Databricks application.
 
-<!-- Note illustration F5 : insérer une capture réelle et lisible du POC DuckDB/Streamlit avec la période janvier 2025, les filtres et les KPI ; légender explicitement les données synthétiques. -->
+<!-- Note illustration F5 : une seule capture de dashboard dans le corps du mémoire. Retenir ici le POC réel de janvier 2025 si aucune capture cloud validée n'est retenue en 5.3.5 ; indiquer période, filtres, KPI et données synthétiques. Une seconde capture ne va en annexe que si elle démontre une différence utile. -->

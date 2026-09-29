@@ -31,5 +31,3 @@ An embedded role adds cost and may not justify a full-time position given the re
 For a small set of representative authorized requests, record request, approval, handoff, work start, delivery and acceptance dates, plus active time by role and iteration count. Separate elapsed delay from human effort.
 
 Compare observations with a clearly defined embedded scenario, or with a measured pilot if one exists. A simulation does not establish actual company improvement. Chapter 8 will value effort, external services and recurring costs without assuming rates or savings.
-
-<!-- Note illustration C9 : envisager ici une comparaison visuelle du processus actuel et d'un scénario avec Data Engineer FinOps seulement après confirmation des rôles. Les délais et gains ne peuvent figurer comme résultats qu'avec des demandes comparables et datées ; sinon renvoyer au schéma C1 du § 1.2. -->

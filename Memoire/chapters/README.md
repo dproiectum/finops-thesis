@@ -1,8 +1,10 @@
-# Thesis assembly plan — 27 September 2026
+# Thesis assembly plan — 29 September 2026
 
-Illustration planning for all 37 sections is in [the illustration plan](../plan/illustrations_plan_2026_09_27.md). Proposed figures remain outside the chapter files until their sources and captions are verified.
+Illustration planning for all 40 sections is in [the illustration plan](../plan/illustrations_plan_2026_09_27.md). Chapter 3 uses its explanatory table without additional figures. Remaining editorial comments elsewhere identify only selected figure or appendix-evidence locations and must be excluded from the final PDF.
 
 > Status: `WORKING`. The main text should be approximately 50 pages. Detailed procedures, screenshots and lengthy outputs belong in appendices.
+
+The student sets a working limit of 60 pages. The school guide recommends approximately 50 pages for the main body, excluding supplementary matter. The final page count must be checked after assembly; no page total is inferred from Markdown length alone.
 
 ## Argument
 
@@ -28,11 +30,14 @@ The thesis distinguishes design and code, local POC validation, cloud execution 
 - **2.3 Cloud Pricing and Cost Mechanisms:** List, Contracted, Effective and Billed Cost; grain and exclusions.
 - **2.4 Allocation, Showback and Governed Self-Service:** allocation rules, accountability and decision quality.
 
-### 3. Methodology, data and experimental protocol
+### 3. Methodology and evaluation framework
 
-- **3.1 Dataset Generation and Validation:** anonymized sources, synthetic assumptions, reproducibility, coverage and representativeness.
-- **3.2 Monthly Billing Simulation and Reconciliation Evaluation:** scenarios, monthly authority, experimental oracle and financial limitations.
-- **3.3 Experimental Protocol and Levels of Evidence:** requirements, environments, datasets, success criteria, measures and evidence retention.
+- **3.1 Objectives and Methodological Framework:** backward reasoning from desired FinOps outcomes to required capabilities, artifacts and acceptance criteria, ending with the experimental dataset.
+- **3.2 Experimental Dataset Preparation:** reference data, reproducible Daily generation, local Monthly simulation, controlled scenarios, publication, validated coverage and representativeness limits.
+- **3.3 Data Quality, Governance and Change Control:** quality criteria, the versioned Data Contract, responsibilities, compatible additions, incompatible drift and reviewed evolution.
+- **3.4 Progressive Implementation and Automation:** local POC, cloud extension, historical and incremental workflows, recovery, evaluation and levels of evidence.
+- **3.5 Analytical Preparation:** business questions, measures and grain, analytical model, datamarts and publication checks; the concrete model remains in section 4.5.
+- **3.6 FinOps Data Product Delivery and Operation:** dashboard and datamarts as analytical products, platform support, delivery, access, operational visibility and acceptance.
 
 ### 4. General design and architecture choices
 
@@ -92,7 +97,7 @@ The thesis distinguishes design and code, local POC validation, cloud execution 
 
 ## Draft status and missing evidence
 
-The previous 40-section draft received an academic-language and evidence review, recorded in `audit/06_academic_writing_review_2026_09_27.md`. Chapter 5 was then consolidated into three sections and section 4.5 was added, leaving 37 current sections; the revisions still require the final supervisor review. Local validation covers 608 Daily files through August 2026 and 18 unchanged monthly bills through June 2026; January 2025 POC cost and allocation results are documented separately. The Belgium completion plan reports a successful DEV/PROD backfill from January 2025 through June 2026. Its Run IDs, control outputs, screenshots and executed commit must be indexed before that run is presented as an independently validated thesis result. The complete Daily DEV-to-PROD cycle, Classic monthly close, Databricks App and economic benchmark still require verification.
+The earlier 40-section draft received an academic-language and evidence review, recorded in `audit/06_academic_writing_review_2026_09_27.md`. Consolidating chapter 5 and adding section 4.5 then left 37 sections. On 29 September, chapter 3 was reorganized into six sections following the approved objective-led method, bringing the current total to 40. The revisions still require the final supervisor review. Local validation covers 608 Daily files through August 2026 and 18 unchanged monthly bills through June 2026; January 2025 POC cost and allocation results are documented separately. The Belgium completion plan reports a successful DEV/PROD backfill from January 2025 through June 2026. Its Run IDs, control outputs, screenshots and executed commit must be indexed before that run is presented as an independently validated thesis result. The complete Daily DEV-to-PROD cycle, Classic monthly close, Databricks App and economic benchmark still require verification.
 
 Chapter 6 concerns the cloud costs being analyzed; chapter 8 concerns the cost of the platform itself. Chapter 5 explains implementation; chapter 7 evaluates it. If the main text substantially exceeds 50 pages, chapters 6–8 may be condensed during assembly without dropping their research questions.
 

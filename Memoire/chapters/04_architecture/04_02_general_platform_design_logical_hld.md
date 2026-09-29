@@ -55,7 +55,9 @@ The proposed operating model gives managers access to their cost scope and autho
 
 Here, “data factory” denotes a centralized production organization, not the Azure Data Factory service. Centralized production can coexist with autonomous access. The issue under study is dependency on repeated requests for changes.
 
-Data Mesh combines domain ownership, data as a product, self-service infrastructure and federated governance. Its autonomy extends to producing teams, beyond report consumption. Physical data location alone does not define it. [Dehghani, 2020](https://martinfowler.com/articles/data-mesh-principles.html).
+Data Mesh combines domain ownership, data as a product, self-service infrastructure and federated governance. Its autonomy extends to producing teams, beyond report consumption. Physical data location alone does not define it.
+
+*Source: Dehghani, [Data Mesh Principles and Logical Architecture](https://martinfowler.com/articles/data-mesh-principles.html) (2020).*
 
 The target adopts product-oriented practices—definitions, quality, ownership and stable interfaces—without autonomous production by several domains or full federated governance. It is therefore not described as a complete Data Mesh. Chapter 9 will revisit this choice against the evidence collected.
 

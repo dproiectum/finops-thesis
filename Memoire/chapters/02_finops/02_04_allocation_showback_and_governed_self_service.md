@@ -4,9 +4,13 @@
 
 Allocation associates technology expenditure with an accountable business perimeter such as a domain, application, project, team or cost center. Unallocated costs must remain visible rather than being silently removed because they are themselves a governance signal.
 
+*Source: FinOps Foundation, [Allocation](https://www.finops.org/framework/capabilities/allocation/).*
+
 ## Showback and chargeback
 
 Showback exposes the cost attributed to a consumer without necessarily performing an internal financial transfer. Chargeback goes further by assigning or recovering that cost through an internal accounting mechanism. The current PFE implements a showback-oriented decision-support scenario; it does not implement an enterprise chargeback process.
+
+*Source: FinOps Foundation, [Invoicing & Chargeback](https://www.finops.org/framework/capabilities/invoicing-chargeback/).*
 
 ## Governed self-service
 

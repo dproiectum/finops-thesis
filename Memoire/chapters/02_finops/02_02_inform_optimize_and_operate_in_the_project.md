@@ -2,7 +2,9 @@
 
 ## Analytical positioning
 
-The [FinOps Foundation](https://www.finops.org/framework/phases/) describes Inform, Optimize and Operate as recurring phases. This thesis uses them to organize the questions tested by the prototype, while recognizing that a reliable cost measure can inform several activities at once.
+The FinOps Foundation describes Inform, Optimize and Operate as recurring phases. This thesis uses them to organize the questions tested by the prototype, while recognizing that a reliable cost measure can inform several activities at once.
+
+*Source: FinOps Foundation, [FinOps Phases](https://www.finops.org/framework/phases/).*
 
 ## Inform
 

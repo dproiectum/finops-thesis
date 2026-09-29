@@ -18,10 +18,12 @@ Le mémoire final, son plan d'assemblage et tous les fichiers de `chapters/` son
 - Appuyer les affirmations importantes sur les données du projet ou des sources vérifiées. Ne créer ni résultat, chiffre, citation, page, DOI ou référence. Distinguer observation, interprétation et incertitude.
 - Rédiger en anglais académique précis, avec des verbes simples, des liens logiques explicites et les détails propres au projet. Éviter les formules promotionnelles, les transitions mécaniques et les perspectives non étayées.
 - Donner une idée principale à chaque paragraphe. Utiliser titres, listes, tableaux et emphase seulement lorsqu'ils facilitent la lecture. Le texte assemblé ne doit contenir ni statut de travail, consigne de rédaction, espace réservé ou balise d'audit.
-- Employer de façon cohérente la norme bibliographique imposée ; vérifier que chaque source existe et soutient la phrase citée. La norme exacte reste à confirmer avec l'étudiant (Q-007).
+- Employer la convention validée le 29 septembre 2026 : une ligne en italique `Source: organisme/auteur, titre du document lié (date connue)` près du passage étayé, puis une référence complète en bibliographie avec URL ou DOI et date de consultation des pages web. Ne pas utiliser une URL seule comme attribution ni confondre année de consultation et année de publication. Une éventuelle norme imposée par l'école prévaut sur cette convention de travail.
 - Relire précision, cohérence, fluidité et fidélité aux sources avant livraison. Les informations personnelles sur le rôle et les apprentissages sont à confirmer (Q-013, Q-021) plutôt qu'à inventer.
 
 ## Statut
+
+Les exports de lecture par chapitre du 29 septembre 2026 se trouvent dans `../output/pdf/chapters/` ; leur index indique le nombre de pages et le périmètre. Les fichiers Markdown restent la source de modification. Ces exports appliquent la convention bibliographique retenue et remplacent, pour la lecture courante, l'ancien export combiné. L'intégration pertinente des articles scientifiques recensés reste à faire avant finalisation (Q-023).
 
 Le projet est en phase de construction. Les documents de ce dossier constituent une base de travail auditable : ils peuvent être corrigés, déplacés, fusionnés ou remplacés lorsque l'architecture et les résultats se stabilisent. Une note technique n'est pas automatiquement une affirmation validée pour le mémoire final.
 
@@ -45,7 +47,7 @@ Une capacité prévue dans le HLD ne doit jamais être présentée comme implém
 | Zone | Rôle | État actuel |
 |---|---|---|
 | `plan/` | Exigences scolaires, cadrage, problématique et périmètre | Documents de travail à réconcilier avec le prototype |
-| `chapters/` | Plan détaillé et notes destinées aux futurs chapitres | Structure mise à jour le 27 septembre 2026 ; matière première, pas encore prose finale consolidée |
+| `chapters/` | Plan détaillé et sections destinées au mémoire | Structure mise à jour le 29 septembre 2026 ; chapitre 3 réorganisé en six sections, relecture finale et assemblage encore nécessaires |
 | `audit/` | Décisions, preuves, questions et changements | Source de traçabilité transversale |
 | `annexes/` | Compléments retenus pour le PDF et fichiers sources des figures | L'annexe de gestion de projet reste à rédiger ; les images sont rangées dans `annexes/figures/architectures/` même lorsqu'elles sont insérées dans un chapitre |
 | `references/` | Guide officiel et bibliographie | Sources à citer et vérifier |

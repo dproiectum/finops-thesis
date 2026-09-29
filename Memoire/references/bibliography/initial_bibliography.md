@@ -1,31 +1,31 @@
-# Initial Bibliography
+# Bibliography and Source Register
 
-This initial bibliography supports the first academic framing of the PFE. It combines official FinOps/FOCUS sources and scientific or academic references. The final thesis bibliography must be refined and formatted consistently.
+This register retains the sources gathered for the PFE. In the thesis, a short italic source line identifies the author or organization and links the document title near the supported passage. Full entries give the available date, title, URL or DOI, and access date for web documentation. An access year is not treated as a publication year. Chapter PDFs include only references cited in that chapter; background readings remain here without implying support for an uncited claim.
 
 ## Official and Professional References
 
-1. FinOps Foundation. (2026). *FinOps Framework*. https://www.finops.org/framework/
+1. FinOps Foundation. (n.d.). *FinOps Framework*. https://www.finops.org/framework/ (accessed 29 September 2026).
    - Use: Defines FinOps as an operating model and cultural practice; supports the Inform, Optimize, Operate positioning.
 
-2. FinOps Foundation. (2026). *FinOps Open Cost and Usage Specification*. https://www.finops.org/topic/focus/
+2. FinOps Foundation. (n.d.). *FinOps Open Cost and Usage Specification*. https://www.finops.org/topic/focus/ (accessed 29 September 2026).
    - Use: Explains FOCUS as a common billing data foundation for reporting, allocation and benchmarking.
 
-3. FOCUS Project. (2026). *FOCUS: FinOps Open Cost and Usage Specification*. https://focus.finops.org/
+3. FOCUS Project. (n.d.). *FOCUS: FinOps Open Cost and Usage Specification*. https://focus.finops.org/ (accessed 29 September 2026).
    - Use: Official source for the FOCUS specification, data model and provider support.
 
-4. FinOps Foundation. (2024). *Adopting FOCUS, the FinOps Open Cost and Usage Specification*. https://www.finops.org/wg/adopting-focus-the-finops-open-cost-and-usage-specification/
+4. FinOps Foundation. (n.d.). *Adopting FOCUS, the FinOps Open Cost and Usage Specification*. https://www.finops.org/wg/adopting-focus-the-finops-open-cost-and-usage-specification/ (last updated 10 December 2025; accessed 29 September 2026).
    - Use: Supports the implementation approach: decide, design, build, test and launch FOCUS adoption.
 
-5. FinOps Open Cost and Usage Specification. (2026). *FOCUS_Spec GitHub repository*. https://github.com/FinOps-Open-Cost-and-Usage-Spec/FOCUS_Spec
+5. FinOps Open Cost and Usage Specification. (n.d.). *FOCUS_Spec GitHub repository*. https://github.com/FinOps-Open-Cost-and-Usage-Spec/FOCUS_Spec (accessed 29 September 2026).
    - Use: Technical reference for FOCUS as an open specification and for schema evolution discussion.
 
-6. FOCUS Project. (2024). *FOCUS 1.0 — Billed Cost*. https://focus.finops.org/docs/specification/v1-0/columns/billed-cost/
+6. FOCUS Project. (2024). *FOCUS 1.0 — Billed Cost*. https://focus.finops.org/docs/specification/v1-0/columns/billed-cost/ (accessed 29 September 2026).
    - Use: Defines the invoiced cost perspective used for reconciliation and cash-oriented reporting.
 
-7. FOCUS Project. (2024). *FOCUS 1.0 — Contracted Cost*. https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/contracted-cost/
+7. FOCUS Project. (2024). *FOCUS 1.0 — Contracted Cost*. https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/contracted-cost/ (accessed 29 September 2026).
    - Use: Defines the negotiated-price cost perspective and its aggregation precautions.
 
-8. FOCUS Project. (2024). *FOCUS 1.0 — List Cost*. https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/list-cost/
+8. FOCUS Project. (2024). *FOCUS 1.0 — List Cost*. https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/list-cost/ (accessed 29 September 2026).
    - Use: Defines the public-price reference used for rate-effect comparisons.
 
 ## Scientific and Academic References
@@ -53,45 +53,54 @@ This initial bibliography supports the first academic framing of the PFE. It com
 
 ## Additional Databricks Platform References
 
-16. Databricks. (n.d.). *Billable usage system table reference*. https://docs.databricks.com/gcp/en/admin/system-tables/billing (accessed 27 September 2026).
+16. Databricks. (n.d.). *Billable usage system table reference*. https://docs.databricks.com/gcp/en/admin/system-tables/billing (accessed 29 September 2026).
    - Use: DBU usage records, billing metadata, data freshness and the attribution limits of All-Purpose compute in sections 8.3–8.4.
 
-17. Databricks. (n.d.). *Monitor job costs with system tables*. https://docs.databricks.com/gcp/en/admin/system-tables/jobs-cost (accessed 27 September 2026).
+17. Databricks. (n.d.). *Monitor job costs & performance with system tables*. https://docs.databricks.com/gcp/en/admin/system-tables/jobs-cost (accessed 29 September 2026).
    - Use: Scope of standard Job-cost monitoring and the distinction between Jobs Compute and All-Purpose workloads.
 
-18. Databricks. (n.d.). *Choose compute for your workloads*. https://docs.databricks.com/gcp/en/compute/choose-compute (accessed 27 September 2026).
+18. Databricks. (n.d.). *Compute selection recommendations*. https://docs.databricks.com/gcp/en/compute/choose-compute (accessed 29 September 2026).
    - Use: Compute-mode options to compare in section 8.4; vendor guidance is not treated as a project result.
 
-19. Databricks. (n.d.). *Cost optimization best practices*. https://docs.databricks.com/gcp/en/lakehouse-architecture/cost-optimization/best-practices (accessed 27 September 2026).
+19. Databricks. (n.d.). *Best practices for cost optimization*. https://docs.databricks.com/gcp/en/lakehouse-architecture/cost-optimization/best-practices (accessed 29 September 2026).
    - Use: Candidate levers for sizing, lifecycle and workload efficiency, subject to measured validation.
 
-20. FOCUS Project. (2024). *FOCUS 1.0 — Effective Cost*. https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/effective-cost/ (accessed 27 September 2026).
+20. FOCUS Project. (2024). *FOCUS 1.0 — Effective Cost*. https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/effective-cost/ (accessed 29 September 2026).
    - Use: Distinguishes amortized economic cost from billed cost in section 2.3.
 
-21. FinOps Foundation. (n.d.). *FinOps Phases*. https://www.finops.org/framework/phases/ (accessed 27 September 2026).
+21. FinOps Foundation. (n.d.). *FinOps Phases*. https://www.finops.org/framework/phases/ (accessed 29 September 2026).
    - Use: The recurring Inform, Optimize and Operate framing in section 2.2.
 
-22. Apache Parquet. (n.d.). *Overview*. https://parquet.apache.org/docs/overview/ (accessed 27 September 2026).
+22. Apache Parquet. (n.d.). *Overview*. https://parquet.apache.org/docs/overview/ (accessed 29 September 2026).
    - Use: File-format properties discussed in section 4.3.
 
-23. Databricks. (n.d.). *What is Delta Lake in Databricks?* https://docs.databricks.com/gcp/en/delta/ (accessed 27 September 2026).
+23. Databricks. (n.d.). *What is Delta Lake in Databricks?* https://docs.databricks.com/gcp/en/delta/ (accessed 29 September 2026).
    - Use: Relationship between Delta and Parquet and the scope of table transactions in section 4.3.
 
-24. Microsoft. (n.d.). *Use Performance Analyzer to examine report performance*. https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-performance-analyzer (accessed 27 September 2026).
+24. Microsoft. (n.d.). *Use Performance Analyzer to examine report performance*. https://learn.microsoft.com/en-us/power-bi/create-reports/performance-analyzer (accessed 29 September 2026).
    - Use: Measurement categories in the proposed Power BI diagnosis in section 7.2.
 
-25. Microsoft. (n.d.). *FOCUS cost and usage details file schema*. https://learn.microsoft.com/en-us/azure/cost-management-billing/dataset-schema/cost-usage-details-focus (accessed 28 September 2026).
-   - Use: Field definitions for Azure FOCUS in section 3.1; this page does not establish the provenance of the project's two reference Parquet files.
+25. Microsoft. (n.d.). *FOCUS cost and usage details file schema*. https://learn.microsoft.com/en-us/azure/cost-management-billing/dataset-schema/cost-usage-details-focus (accessed 29 September 2026).
+   - Use: Field definitions for Azure FOCUS in section 3.2.1; this page does not establish the provenance of the project's two reference Parquet files.
 
-## Minimum Requirement Check
+26. Google Cloud. (n.d.). *What are data products?* https://cloud.google.com/discover/what-are-data-products (accessed 29 September 2026).
+   - Use: Professional definition including dashboards as possible data products in section 3.6; does not establish stakeholder adoption or certification of this project.
 
-Référence professionnelle complémentaire ajoutée le 15 septembre 2026 :
+## Additional Conceptual References
 
-- Dehghani, Z. (2020, 3 décembre). *Data Mesh Principles and Logical Architecture*. MartinFowler.com. [Article](https://martinfowler.com/articles/data-mesh-principles.html). Consulté le 15 septembre 2026.
+27. Dehghani, Z. (2020, 3 December). *Data Mesh Principles and Logical Architecture*. MartinFowler.com. https://martinfowler.com/articles/data-mesh-principles.html (accessed 29 September 2026).
   - Usage : distinguer autonomie de consommation, autonomie de production et principes du Data Mesh dans la section 4.2. Source professionnelle fondatrice, non comptée comme article scientifique.
 
-- Total references listed: 26.
-- Scientific/academic references: 7.
-- Official/professional references: 19.
+28. FinOps Foundation. (n.d.). *Allocation*. https://www.finops.org/framework/capabilities/allocation/ (accessed 29 September 2026).
+   - Use: Attribution to business scopes and allocation coverage in section 2.4.
 
-The school requires 10 references including at least 5 scientific articles. This initial bibliography satisfies the quantity requirement, but the final thesis should still refine source quality, in-text citation style, and relevance by chapter.
+29. FinOps Foundation. (n.d.). *Invoicing & Chargeback*. https://www.finops.org/framework/capabilities/invoicing-chargeback/ (accessed 29 September 2026).
+   - Use: Distinction between showback and chargeback in section 2.4.
+
+## Citation Coverage Check
+
+- Total references listed: 29.
+- Scientific/academic references: 7.
+- Official/professional references: 22.
+
+The school requires 10 references including at least 5 scientific articles. The register contains enough candidate entries, but its seven scientific readings are not currently cited in the chapter text. Their presence here alone does not satisfy the final thesis's citation requirement. They need verified, relevant integration before final submission; the chapter PDFs do not include uncited entries.

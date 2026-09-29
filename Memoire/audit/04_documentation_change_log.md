@@ -252,3 +252,41 @@ Donner au métier FinOps et aux mécanismes économiques du cloud une place expl
 - Description du circuit rapporté : retours/validation du supérieur → transmission par la manager → modifications par un intervenant externe basé en Inde. Délais signalés mais non mesurés ; localisation non traitée comme cause.
 - Création de la section 9.2 sur l'apport potentiel d'un Data Engineer intégré à FinOps, incluant réactivité, manipulation directe, capitalisation, coûts et conditions de gouvernance.
 - Mise en relation avec les scénarios build/run du chapitre 8 ; aucune économie humaine ou amélioration de délai revendiquée comme démontrée.
+
+## 2026-09-29 — Méthodologie orientée besoins et produits analytiques
+
+- Plan approuvé par l'étudiant : 3.1 objectifs et cadre déductif, 3.2 préparation du dataset, 3.3 qualité/gouvernance/contrôle de changement, 3.4 POC et automatisation, 3.5 préparation analytique, 3.6 livraison et exploitation du produit.
+- Remplacement des trois anciennes sections du chapitre 3 par six fichiers. L'ancienne génération (3.1) et la simulation mensuelle (3.2) sont réunies en 3.2 ; le protocole et les niveaux de preuve (ancienne 3.3) sont intégrés à 3.4 et à l'acceptation des produits en 3.6. Les résultats locaux déjà vérifiés sont conservés avec leur période et leurs limites.
+- Tableau en 3.1 ordonné du pilotage FinOps vers ses prérequis, avec le dataset en dernière ligne. Cet ordre déductif est distingué de l'ordre de réalisation.
+- Data Contract présenté comme artefact de gouvernance, sans l'assimiler à une gouvernance complète ni à une certification FOCUS. Évolution compatible, dérive incompatible et modification volontaire du contrat sont distinguées.
+- Dashboard présenté comme produit analytique destiné aux consommateurs ; datamarts comme produits réutilisables ; plateforme comme système de production, de validation et d'exploitation. Déploiement, accès, calcul correct et adoption ne sont pas supposés équivalents.
+- Renvois actuels et plan d'assemblage mis à jour : 40 sections. Numérotation des entrées historiques conservée, avec une note de correspondance dans la preuve locale.
+- Ajout de la définition professionnelle des data products par Google Cloud, vérifiée le 29 septembre ; réutilisation des sources officielles Microsoft, FOCUS et FinOps déjà vérifiées. Q-022 reste ouverte : la page Microsoft décrit le schéma, mais ne prouve pas l'origine exacte des deux références Parquet.
+- Remarques de figures dans des commentaires HTML et plan d'illustrations mis à jour. Le dataset du § 3.2 reste local ; les schémas cloud relèvent des chapitres 4 et 5. Aucune figure ou capture fabriquée comme preuve d'exécution.
+- Aucun code du générateur ou de la plateforme modifié, aucun test cloud ou benchmark exécuté à cette occasion, aucun push automatique.
+
+## 2026-09-29 — Condensation du chapitre 3 et sélection des illustrations
+
+- Demande de l'étudiant : relire, supprimer les répétitions et ne conserver des images que si elles sont nécessaires, avec une contrainte de travail de 60 pages. Le guide scolaire reste inchangé et recommande environ 50 pages de corps de texte ; le décompte dépend de l'assemblage final.
+- Chapitre 3 réduit d'environ 3 448 à 1 507 mots, comptés avec `sed '/<!--.*-->/d' ... | wc -w`, soit environ 56 % hors notes éditoriales. Les six thèmes approuvés restent distincts ; leurs explications et le tableau sont condensés.
+- Sous-sections du dataset regroupées en 3.2.1 références/préparation, 3.2.2 Monthly/scénarios et 3.2.3 couverture/limites. Sous-titres des sections 3.3 à 3.6 retirés. Renvois actifs mis à jour ; détails déjà traités dans les chapitres 4 à 8 et le registre des preuves non répétés.
+- Retrait des six remarques d'illustration du chapitre 3 : le texte et le tableau suffisent. Suppression des propositions redondantes dans l'introduction, les concepts FinOps, l'analyse numérique, la comparaison et la discussion.
+- Sélection resserrée dans le corps : HLD logique, HLD physique, relations Gold, une seule capture de dashboard (locale ou cloud vérifiée), et un graphique économique uniquement si les mesures et la lisibilité le justifient. Captures de runs et de Performance Analyzer réservées aux annexes si elles complètent réellement les tableaux de preuve.
+- Aucune image existante supprimée, aucun résultat ou code technique modifié, aucun export PDF ni push effectué. Les contenus retirés des fichiers suivis restent récupérables dans Git.
+
+## 2026-09-29 — Introduction du tableau méthodologique et attribution FOCUS
+
+- Conservation de la chaîne déductive demandée en 3.1 et ajout d'une courte phrase d'introduction avant le tableau.
+- Remplacement du lien intégré à la phrase par une ligne de source en italique avec organisme, titre lié et date de mise à jour. L'attribution concerne les cycles d'adoption, pas le cadre besoins–artefacts propre au projet.
+- Référence bibliographique 4 corrigée après vérification de la page officielle : mise à jour indiquée au 10 décembre 2025 ; année de publication non établie, donc `n.d.` au lieu de l'année 2024 précédemment inscrite. URL canonique conservée sans point final dans l'adresse.
+- Le choix global du style bibliographique reste ouvert (Q-007). Aucun export PDF ni push effectué.
+
+## 2026-09-29 — Convention de sources appliquée au mémoire et export par chapitre
+
+- Demande de l'étudiant : appliquer la convention validée en 3.1 à tout le mémoire et produire un PDF distinct pour chacun des dix chapitres.
+- Relecture des 40 sections. Tous les liens publics de citation du texte sont désormais dans une ligne en italique `Source: auteur/organisme, titre lié`, près du passage étayé. Les références complètes restent dans le registre bibliographique et sont reprises dans les cinq PDF qui contiennent des citations externes.
+- Quinze lignes de source et vingt références externes distinctes dans le corps. Ajout de deux références officielles vérifiées pour Allocation et Invoicing & Chargeback en 2.4. Mise à jour de l'URL canonique de Performance Analyzer et des titres de trois pages Databricks. Années de consultation séparées des années de publication non établies ; dates de consultation des pages revérifiées actualisées.
+- Q-007 et la règle de rédaction du README actualisées : convention de travail choisie par l'étudiant, sans prétendre appliquer APA ou IEEE. Registre harmonisé et référence Dehghani numérotée ; 29 entrées conservées, dont sept articles scientifiques encore non cités. Q-023 ajoutée pour leur intégration pertinente et vérifiée avant remise finale ; aucune citation scientifique artificielle ajoutée.
+- Dix PDF A4 créés dans `output/pdf/chapters/`, avec pagination chapitre-page, signets et liens cliquables. Total : 56 pages, dont 51 pages de texte/tableaux et cinq pages de références par chapitre. Figures prévues, commentaires HTML, registres et annexes non finalisées exclus. L'ancien PDF combiné n'est pas remplacé et reste antérieur à cette révision.
+- Contrôles automatiques : présence des 40 titres de section, correspondance de chaque lien avec la bibliographie, comptage des sources, URLs complètes dans les références, format A4, marges et glyphes. Les 56 pages ont été rendues puis relues visuellement ; sources isolées et blocs de formules coupés corrigés avant livraison.
+- Aucun résultat technique, chiffre du projet ou code de pipeline modifié ; aucun push effectué. Les scripts d'export et images de contrôle restent temporaires, hors du dépôt.

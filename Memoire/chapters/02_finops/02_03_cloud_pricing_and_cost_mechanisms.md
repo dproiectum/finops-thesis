@@ -29,9 +29,9 @@ This diagram is explanatory. The equality and ordering of these values cannot be
 | `EffectiveCost` | Economically allocated cost after relevant discounts and amortized commitment purchases | Accrual-oriented service and resource analysis |
 | `BilledCost` | Charge serving as the basis for invoicing in the billing period | Invoice reconciliation, cash-oriented reporting and allocation |
 
-These definitions follow the FOCUS 1.0 specifications for [List Cost](https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/list-cost/), [Contracted Cost](https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/contracted-cost/), [Effective Cost](https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/effective-cost/) and [Billed Cost](https://focus.finops.org/docs/specification/v1-0/columns/billed-cost/). `BilledCost` and `EffectiveCost` answer different questions. A commitment purchase may be billed at one time while its economic cost is allocated to covered usage over time. Their difference must therefore not automatically be labelled as a saving.
+These definitions follow the FOCUS 1.0 specifications for List Cost, Contracted Cost, Effective Cost and Billed Cost. `BilledCost` and `EffectiveCost` answer different questions. A commitment purchase may be billed at one time while its economic cost is allocated to covered usage over time. Their difference must therefore not automatically be labelled as a saving.
 
-<!-- Note illustration C2 : si le tableau ne suffit pas, placer ici un schéma original des quatre perspectives FOCUS et de leurs usages. Ne pas représenter une cascade numérique universelle ; citer les définitions FOCUS 1.0. -->
+*Source: FOCUS Project, FOCUS 1.0: [List Cost](https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/list-cost/), [Contracted Cost](https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/contracted-cost/), [Effective Cost](https://focus.finops.org/docs/specification/v1-0/columns/cost-and-usage/effective-cost/) and [Billed Cost](https://focus.finops.org/docs/specification/v1-0/columns/billed-cost/).*
 
 ## Pricing quantity and unit price
 
