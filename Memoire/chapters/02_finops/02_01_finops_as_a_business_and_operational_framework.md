@@ -2,9 +2,13 @@
 
 FinOps provides the business framework for interpreting the project's cost data. A pipeline can reconcile charges technically while leaving allocation, ownership or business meaning unresolved. The platform therefore supplies data for financial questions as well as for reporting.
 
-The FinOps Foundation framework defines FinOps through collaboration between engineering, finance and business functions, timely data and financial accountability. The project applies this framework to a bounded problem: preparing governed cost products and examining what decisions those products can support. It does not evaluate the maturity of the organization's full FinOps practice.
+The FinOps Foundation framework defines FinOps through collaboration between engineering, finance and business functions, timely data and financial accountability. The project applies this framework to a bounded problem: preparing governed cost products and examining what decisions those products can support. It does not evaluate the maturity of the organization's full FinOps practice (FinOps Foundation, n.d.-c).
 
-*Source: FinOps Foundation, [FinOps Framework](https://www.finops.org/framework/).*
+Figure 2.1 locates this study within the Framework. Data ingestion, allocation, reporting and governance are relevant to the proposed platform, but the figure does not imply that the project implements every FinOps capability.
+
+![FinOps Framework overview of scopes, personas, domains and capabilities](../../annexes/figures/FinOps-Framework.png)
+
+Figure 2.1 — FinOps Framework: scopes, personas, domains and capabilities. Source: FinOps Foundation, *FinOps Framework*, https://www.finops.org/framework/ (accessed 30 September 2026). License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/.
 
 ## Why cloud economics require FinOps
 
@@ -19,3 +23,7 @@ Cloud expenditure varies with usage, configuration, location and contractual ter
 - Authorized analysts may need direct access to governed datamarts for additional analysis.
 
 This is a design allocation of responsibility. The existing dashboard's actual permission and change processes are described from the student's account in section 1.2; the proposed roles require organizational validation before they can be reported as established practice.
+
+Source for this section (accessed 30 September 2026):
+
+- FinOps Foundation, *FinOps Framework*: https://www.finops.org/framework/

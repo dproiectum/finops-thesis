@@ -2,13 +2,11 @@
 
 ## Analytical positioning
 
-The FinOps Foundation describes Inform, Optimize and Operate as recurring phases. This thesis uses them to organize the questions tested by the prototype, while recognizing that a reliable cost measure can inform several activities at once.
-
-*Source: FinOps Foundation, [FinOps Phases](https://www.finops.org/framework/phases/).*
+The FinOps Foundation describes Inform, Optimize and Operate as recurring phases. This thesis uses them to organize the questions tested by the prototype, while recognizing that a reliable cost measure can inform several activities at once (FinOps Foundation, n.d.-e).
 
 ## Inform
 
-Inform establishes visibility and accountability. It includes cost trends, allocation, showback, comparison between periods, identification of unallocated expenditure and access to consistent definitions. In the prototype, Inform is represented principally by the certified datamarts and the Streamlit dashboard.
+Inform establishes visibility and accountability. It includes cost trends, allocation, showback, comparison between periods, identification of unallocated expenditure and access to consistent definitions. In the prototype, Inform is represented principally by the validated datamarts and the Streamlit dashboard.
 
 ## Optimize
 
@@ -21,3 +19,7 @@ Operate embeds FinOps into recurring processes. For this PFE it includes ingesti
 ## Boundary of claims
 
 The dashboard demonstrates cost visibility on synthetic data. It does not demonstrate measured organizational savings, a reduction in company workload or production-grade continuous operation. These claims require separate evidence.
+
+Source for this section (accessed 30 September 2026):
+
+- FinOps Foundation, *FinOps Phases*: https://www.finops.org/framework/phases/

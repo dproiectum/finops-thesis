@@ -21,6 +21,7 @@ Chaque décision structurante reçoit un identifiant stable. Une décision peut 
 | ADR-013 | 2026-09-20 | Conserver le modèle Gold et les datamarts en SQL versionné, avec PySpark comme orchestrateur d'exécution | `DECIDED` | Oui | Modèle de données cloud, DDL/DML Gold, runner SQL |
 | ADR-014 | 2026-09-20 | Utiliser Serverless `STANDARD` avec un plafond de quatre exécutions simultanées par Job en DEV et reporter le benchmark Classic en fin de projet | `DECIDED` pour la configuration DEV initiale | Oui | Validation, coûts run, Bundle Databricks |
 | ADR-015 | 2026-09-27 (documenté) | Laisser le RAW commun en place pour permettre une consommation indépendante par DEV et PROD | `DECIDED` dans la configuration actuelle | Oui | HLD physique, pipeline, rétention, `config/common.toml` |
+| ADR-016 | 2026-10-01 | Séparer l'authentification Cloud Run/IAP des habilitations métier et tester celles-ci avec des personas synthétiques | `DECIDED` pour la conception ; implémentation à faire | Oui | HLD physique, application Cloud Run, validation d'accès |
 
 ### ADR-014 — Compute DEV économique et benchmark différé
 
@@ -47,6 +48,20 @@ Chaque décision structurante reçoit un identifiant stable. Une décision peut 
 - **Conséquence :** une politique de rétention et son coût de stockage restent à définir en tenant compte de tous les consommateurs et de l'audit.
 - **Preuves associées :** configuration et `docs/architecture.md` ; aucune preuve d'une politique de rétention de production.
 - **Remplace / remplacée par :** remplace uniquement la partie « archivage automatique après clôture » d'ADR-012.
+
+### ADR-016 — Identité Cloud Run et habilitations métier du dashboard
+
+- **Date :** 2026-10-01.
+- **Statut :** `DECIDED` pour la conception ; SQL, code et tests non encore implémentés.
+- **Contexte :** l'équipe FinOps conserve la responsabilité de la plateforme et souhaite partager uniquement le dashboard avec des managers, owners et responsables de projet dont les périmètres diffèrent.
+- **Contraintes :** application finale Streamlit sur Cloud Run ; backend Databricks en lecture seule ; données et identités de démonstration synthétiques ; absence actuelle de domaines, sous-domaines et projets validés dans le modèle source.
+- **Options considérées :** accès commun sans filtre ; saisie libre d'un e-mail ; groupes seuls ; personas synthétiques pour la démonstration puis Google IAP pour l'identité réelle.
+- **Décision :** créer `finops_ops.security` avec `user_entitlement` et `business_scope`, conserver une identité technique Databricks en lecture seule, utiliser une liste fixe de personas en mode `demo` et réserver le mode `iap` à une identité signée et validée. Aucune saisie libre d'identité n'est autorisée.
+- **Justification :** séparer authentification et autorisation permet de démontrer les règles métier sans créer de faux comptes d'entreprise et sans présenter la simulation comme une sécurité de production.
+- **Conséquences positives :** refus par défaut, plusieurs périmètres par principal, démonstration reproductible et trajectoire explicite vers IAP.
+- **Coûts, limites et risques :** chaque requête doit appliquer le périmètre ; un oubli peut exposer des données ; les hiérarchies simulées ne valident pas l'organisation réelle ; IAP doit être testé séparément.
+- **Preuves associées :** aucune à ce stade ; protocole prévu en section 7.5.
+- **Remplace / remplacée par :** complète ADR-009 et ADR-011 sans les remplacer.
 
 ## Modèle pour une nouvelle décision
 

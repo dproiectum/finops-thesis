@@ -38,10 +38,29 @@ Jobs coordinate environment checks, source selection, loading, promotion and val
 
 The working completion note reports DEV and PROD backfill controls, but primary run artefacts remain to be assembled. A complete Daily promotion, an idempotent replay, a Classic monthly-close Job and an interrupted-run recovery test need separate records. Section 7.4 defines the validation protocol and current evidence boundary.
 
-## 5.3.5 Streamlit application and read-only access
+## 5.3.5 Cloud Run Streamlit application and read-only data access
 
-The separate cloud application under `FinOps Cloud Data Platform/apps/finops_dashboard` is designed to query `finops_prod.datamart` and `finops_ops.audit` through a SQL Warehouse without writing to Unity Catalog. Its pages cover the Knowledge Base, executive overview, cost drivers, savings, allocation and accountability, resources, operations and quality, and architecture. The Knowledge Base explains column names and cost calculations; comparisons of `ListCost`, `ContractedCost`, `EffectiveCost` and `BilledCost` remain descriptive until business eligibility and exclusion rules are validated.
+The separate cloud application under `FinOps Cloud Data Platform/apps/finops_dashboard` is packaged with a Dockerfile for Google Cloud Run. It is designed to query `finops_prod.datamart` and selected `finops_ops.audit` objects through a SQL Warehouse without writing to Unity Catalog. Its pages cover the Knowledge Base, executive overview, cost drivers, savings, allocation and accountability, resources, operations and quality, and architecture. The Knowledge Base explains column names and cost calculations; comparisons of `ListCost`, `ContractedCost`, `EffectiveCost` and `BilledCost` remain descriptive until business eligibility and exclusion rules are validated.
 
-The deployment guide specifies narrow read permissions for the application service principal. Source code and prescribed grants do not establish effective access: deployed page behavior, Warehouse permissions, direct SQL access and any Row-Level Security claim require tests and screenshots. The local Streamlit AppTest result in section 5.2 is not evidence for this application.
+The application uses a technical identity for the backend Databricks connection. Its final least-privilege target is `CAN USE` on the SQL Warehouse and `SELECT` on the serving tables and security metadata that the application actually consumes, with no access to RAW, DEV or data-engineering write operations. Credential material must be injected at deployment and not committed to the container image or Git repository. Source code, a Dockerfile and prescribed grants do not establish effective access: the deployed revision, Cloud Run configuration, secret handling, Warehouse permissions and page behavior require retained tests and screenshots. The local Streamlit AppTest result in section 5.2 is not evidence for this cloud deployment.
 
-<!-- Note illustration C5 : retenir une capture de la Databricks App seulement après vérification du déploiement, des pages et des permissions. Si elle est choisie comme unique capture du dashboard dans le corps, ne pas y ajouter aussi F5. Indiquer environnement, période et données synthétiques ; conserver les détails de preuve séparément. -->
+<!-- Note illustration C5 : retenir une capture du dashboard Cloud Run seulement après vérification du déploiement, des pages et des permissions. Si elle est choisie comme unique capture du dashboard dans le corps, ne pas y ajouter aussi F5. Indiquer environnement, période et données synthétiques ; conserver les détails de preuve séparément. -->
+
+## 5.3.6 Proposed role- and scope-based dashboard authorization
+
+The next controlled extension introduces a `security` schema in the environment-independent `finops_ops` catalog. This avoids mixing mutable access rules with the append-oriented operational records in `finops_ops.audit` and avoids duplicating the same dashboard identities in DEV and PROD. `user_entitlement` stores one or more active role-and-scope assignments for a principal. `business_scope` maps the organizational hierarchy to application codes, cost centers, subscriptions or other keys present in the analytical products. The first implementation requires only these two tables; a separate role table is unnecessary while the five role definitions remain versioned in application code.
+
+| Role | Scope evaluated by the prototype | Expected visibility |
+|---|---|---|
+| FinOps administrator | Global | All dashboard products allowed to the application |
+| Domain manager | Assigned domain | Applications and projects mapped to that domain |
+| Subdomain manager | Assigned subdomain | Applications and projects mapped to that subdomain |
+| Application owner | Assigned application | Costs and resources of that application |
+| Project manager | Assigned project | Costs and resources mapped to that project |
+| Unentitled identity | None | Access denied before analytical queries run |
+
+The production target uses Google Identity-Aware Proxy in front of Cloud Run. The application validates the signed IAP assertion, extracts the verified email and uses parameterized SQL to resolve the corresponding entitlement. Because Databricks receives the backend service-principal identity rather than the end-user identity in this design, every analytical query must be constrained by the resolved scope. Page hiding is only a presentation consequence and is not treated as the security control.
+
+For the PFE demonstration, `FINOPS_AUTH_MODE=demo` exposes a selector containing only predefined synthetic personas. It does not provide a free-text email input. `FINOPS_AUTH_MODE=iap` removes the selector and rejects a request whose IAP identity is missing or invalid. The demonstration mode tests authorization behavior; it does not prove SSO, enterprise directory integration or production security. These controls and their tests remain planned until the corresponding SQL, Python code and Cloud Run configuration are implemented.
+
+*Source: Google Cloud, Configure IAP for Cloud Run and Getting the user's identity (accessed 1 October 2026).*

@@ -1,5 +1,13 @@
 # Journal des changements documentaires
 
+## 2026-10-01 — Intégration de la stratégie d'accès du dashboard Cloud Run
+
+- Correction de la cible de restitution dans les chapitres 4, 5 et 7 : application Streamlit conteneurisée pour Cloud Run au lieu d'une Databricks App.
+- Ajout de la frontière entre identité IAP, service principal Databricks en lecture seule et habilitations métier projetées dans `finops_ops.security`.
+- Ajout de la section 5.3.6 sur le prototype par rôle et périmètre et de la section 7.5 sur son protocole de validation par personas synthétiques.
+- Mise à jour de la discussion, des travaux futurs, du plan d'assemblage, des annexes, de la bibliographie et des registres ; ajout d'ADR-016.
+- Aucun SQL, code Streamlit, paramètre Cloud Run ou test de sécurité n'a été exécuté par cette mise à jour documentaire. Les passages distinguent donc la conception, la simulation future et l'authentification IAP non encore prouvée.
+
 ## 2026-09-28 — Consolidation du mémoire dans son dépôt Git
 
 - Comparaison des deux dossiers : la copie `PFE/Memoire` contient neuf documents modifiés et deux nouvelles figures ; aucun fichier n'existe uniquement dans `finops-thesis/Memoire`.

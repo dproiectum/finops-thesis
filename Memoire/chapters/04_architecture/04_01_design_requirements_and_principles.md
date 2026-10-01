@@ -36,4 +36,4 @@ The architecture follows the requirements in section 1.5. It must make source ch
 
 ## Project constraints
 
-The design must remain achievable within the PFE schedule and available licences. Confidentiality limits direct use of enterprise billing data. Only a restricted anonymized source is available. The local DuckDB POC, the Databricks/GCP DEV and PROD workspaces, and a possible enterprise Azure target provide different levels of evidence.
+The design must remain achievable within the PFE schedule and available licences. Confidentiality limits direct use of enterprise billing data. Only restricted anonymized reference files are available. The local DuckDB POC and the DEV and PROD catalogs of the Databricks/GCP prototype provide different levels of evidence. Deployment into an enterprise environment remains outside the implemented scope.

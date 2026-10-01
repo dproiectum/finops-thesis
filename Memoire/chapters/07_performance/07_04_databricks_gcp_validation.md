@@ -16,7 +16,7 @@ The working Belgium completion note states that the four catalogs exist, that a 
 | Daily DEV load | 1 July 2026 reported in DEV only | Run ID; source URI; rows written; DEV checks and month status |
 | Daily promotion to PROD | Job template and procedure exist | Complete DAG run; matching DEV/PROD outputs; OPS records; idempotent replay |
 | Monthly close DEV → PROD | Module and notebook exist; dedicated Classic Job absent | Billing-arrival guard; both runs; `BEFORE/SOURCE/AFTER`; equality and failure recovery |
-| Databricks App | Source and deployment guide exist | Deployment record; page checks; Warehouse and Unity Catalog permissions |
+| Cloud Run Streamlit dashboard | Container source exists; deployment is reported by the student | Cloud Run revision; page checks; backend identity, Warehouse and Unity Catalog permissions |
 
 <!-- Note preuve F8 : conserver le tableau dans le corps du mémoire. Après collecte, placer seulement les captures de runs et de contrôles réellement utiles en annexe, avec Job/Run IDs, révision, période et résultats. Ne pas ajouter une seconde vue synthétique qui répète ce tableau. -->
 
@@ -28,4 +28,4 @@ The monthly-close experiment should begin only when a detailed billing file is p
 
 ## 7.4.4 Limits of current validation
 
-The currently indexed local tests demonstrate generator consistency and cloud-code behavior outside Databricks. The Belgium plan provides a credible progress record for historical cloud loading, but without primary artifacts the thesis cannot report exact cloud row counts, durations, DBUs or application behavior as measured results. No controlled Serverless/Classic performance or cost comparison follows from the presence of both configurations. RLS and direct SQL-access rules require separate access tests. These limits are carried into chapters 8 and 9 rather than filled with estimates presented as observations.
+The currently indexed local tests demonstrate generator consistency and cloud-code behavior outside Databricks. The Belgium plan provides a credible progress record for historical cloud loading, but without primary artifacts the thesis cannot report exact cloud row counts, durations, DBUs or application behavior as measured results. No controlled Serverless/Classic performance or cost comparison follows from the presence of both configurations. Backend permissions, Cloud Run authentication and direct SQL-access rules require separate access tests; the role-and-scope protocol is defined in Section 7.5. These limits are carried into chapters 8 and 9 rather than filled with estimates presented as observations.

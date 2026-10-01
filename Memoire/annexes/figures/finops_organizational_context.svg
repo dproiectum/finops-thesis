@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="445" viewBox="0 0 900 445" role="img" aria-labelledby="title description">
+  <title id="title">Simplified organizational context of the FinOps team</title>
+  <desc id="description">Strategy, Sustainability and Digital leads to Digiteam, then Infrastructure and Operations and Digital Employee Experience, then Infrastructure Design, then the FinOps team.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M1 1 L7 4 L1 7 Z" fill="#35556d"/>
+    </marker>
+  </defs>
+  <rect width="900" height="445" fill="#ffffff"/>
+  <g fill="none" stroke="#35556d" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M450 80 V103"/>
+    <path d="M450 164 V187"/>
+    <path d="M450 248 V271"/>
+    <path d="M450 332 V355"/>
+  </g>
+  <g>
+    <rect x="90" y="20" width="720" height="60" rx="9" fill="#eef3f7" stroke="#35556d" stroke-width="2"/>
+    <text x="261" y="57" fill="#173b54" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold">Strategy, Sustainability and Digital</text>
+
+    <rect x="90" y="104" width="720" height="60" rx="9" fill="#eef3f7" stroke="#35556d" stroke-width="2"/>
+    <text x="401" y="141" fill="#173b54" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold">Digiteam</text>
+
+    <rect x="90" y="188" width="720" height="60" rx="9" fill="#eef3f7" stroke="#35556d" stroke-width="2"/>
+    <text x="319" y="212" fill="#173b54" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold">Infrastructure &amp; Operations</text>
+    <text x="293" y="236" fill="#173b54" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold">and Digital Employee Experience</text>
+
+    <rect x="90" y="272" width="720" height="60" rx="9" fill="#eef3f7" stroke="#35556d" stroke-width="2"/>
+    <text x="334" y="309" fill="#173b54" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold">Infrastructure Design</text>
+
+    <rect x="90" y="356" width="720" height="60" rx="9" fill="#173b54" stroke="#173b54" stroke-width="2"/>
+    <text x="380" y="393" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold">FinOps team</text>
+  </g>
+</svg>

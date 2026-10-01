@@ -45,6 +45,23 @@ Après chaque décision, implémentation ou validation importante, ajouter une e
 
 Les nouvelles entrées sont ajoutées sous ce titre, de la plus récente à la plus ancienne.
 
+### 2026-10-01 — Conception de l'autorisation du dashboard Cloud Run
+
+- **Besoin ou problème traité :** partager le dashboard avec plusieurs rôles métier sans donner accès aux catalogues, pipelines ou stockages de la plateforme.
+- **Statut :** `PLANNED` ; conception documentaire ajoutée, aucune table ni logique applicative créée à cette étape.
+- **Contexte et contraintes :** application finale Streamlit sur Cloud Run ; backend Databricks en lecture seule ; démonstration sur données synthétiques ; identités d'entreprise non disponibles pour le test.
+- **Solutions envisagées :** accès commun, e-mail libre saisi dans l'interface, groupes uniquement, ou séparation entre authentification IAP et habilitations par rôle/périmètre.
+- **Choix retenu :** schéma projeté `finops_ops.security` avec `user_entitlement` et `business_scope` ; mode `demo` à personas fixes ; mode `iap` sans sélecteur ; refus par défaut.
+- **Justification du choix :** permettre une démonstration reproductible des autorisations sans confondre persona synthétique et authentification de production.
+- **Implémentation réalisée :** mise à jour des sections d'architecture, d'implémentation, de discussion et de perspectives ; ajout du protocole de validation 7.5 et d'ADR-016.
+- **Validation ou tests exécutés :** aucun test fonctionnel de sécurité ; cohérence documentaire à contrôler.
+- **Résultats mesurés :** aucun.
+- **Limites et risques :** hiérarchie métier à simuler puis valider ; chaque requête doit appliquer son périmètre ; IAP et la validation du JWT restent à implémenter.
+- **Fichiers de preuve :** aucun artefact d'exécution ; sources du mémoire et documentation officielle Google Cloud enregistrées dans la bibliographie.
+- **Décisions associées :** ADR-016.
+- **Preuves associées :** preuve à créer après implémentation.
+- **Destination probable dans le mémoire :** sections 4.4, 5.3, 7.5, 9.1, 10.3 et annexe de preuve éventuelle.
+
 ### 2026-09-27 — Réorganisation du chapitre de réalisation
 
 - **Besoin ou problème traité :** distinguer clairement les trois livrables et sortir la chronologie Frankfurt/Belgium du HLD.

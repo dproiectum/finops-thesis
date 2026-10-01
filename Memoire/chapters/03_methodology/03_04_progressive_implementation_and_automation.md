@@ -2,6 +2,8 @@
 
 The local POC tests agreement between source totals, transformations and displayed indicators for an identified period. The cloud extension then addresses recurring execution, separate development and production outputs, and remote consumption. This explains the implementation strategy without assuming a strict chronology or treating local success as cloud validation.
 
+<!-- Editorial reminder, not for the final PDF: After the technical work is complete, revise the WBS and September 2026 Gantt against the actual project record. Then add a concise project-planning paragraph here and include a legible WBS and weekly Gantt in an appendix within the same PDF. Distinguish reconstructed planning dates from verified execution timestamps; do not use the Gantt as evidence that a cloud run succeeded. -->
+
 The operating protocol distinguishes historical backfill, incremental Daily processing and monthly replacement. Each workflow defines input scope, expected outputs and replay behavior. Development validation precedes production promotion; source identity, status and reconciliation results must support recovery if one environment succeeds and the next fails. Repeated execution must not duplicate activity.
 
 Evaluation follows the acceptance criteria in section 3.1. Each test records its inputs, period, environment, revision, procedure, expected result and observed output, including failures. Cloud records also identify runs and relevant table states. Code demonstrates implemented logic; retained outputs establish behavior in a particular environment. Chapter 7 separates available results from unresolved tests.

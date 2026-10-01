@@ -2,9 +2,7 @@
 
 ## 3.2.1 Reference data and source preparation
 
-Two Azure FOCUS cost-and-usage files, anonymized before use, provide reference rows and schema for fictional consumption data. Microsoft's FOCUS file-schema documentation defines the fields but does not establish the provenance of these particular files. The reference inputs remain local and are not published with the project.
-
-*Source: Microsoft, [FOCUS cost and usage details file schema](https://learn.microsoft.com/en-us/azure/cost-management-billing/dataset-schema/cost-usage-details-focus).*
+Two Azure FOCUS cost-and-usage files, anonymized before use, provide reference rows and schema for fictional consumption data. Microsoft's FOCUS file-schema documentation defines the fields but does not establish the provenance of these particular files (Microsoft, n.d.-a). The reference inputs remain local and are not published with the project.
 
 The independent generator retains rows with usable charge dates and billed cost, EUR currency and Microsoft provider. The `daily-template-v2` method samples these rows, replaces selected identifiers consistently, assigns dates and scales costs to configured targets. Daily output retains the source Arrow schema and is written to `datasets/focus/daily/YYYY/MM/YYYY-MM-DD.parquet`. The same published inputs can subsequently feed different analytical engines.
 
@@ -27,3 +25,7 @@ Monthly output is published locally at `datasets/focus/monthly/billing-YYYY-MM.p
 Local validation on 27 September 2026 confirmed schema, temporal and monetary consistency for 608 Daily files, January 2025–August 2026, containing 3,664,261 rows and EUR 20,357,040. The 18 `no_change` Monthly files cover January 2025–June 2026, with 3,279,613 rows and EUR 18,220,080; each matched its Daily month and manifest hash. Revalidation after path harmonization on 28 September preserved these results and the Monthly hashes.
 
 July–August therefore belong only to the validated Daily corpus. Corrected scenarios still require downstream tests against expected outcomes. The corpus supports engineering evaluation, not claims about real resource lifecycles, invoice correctness or organizational savings; forecasting would assess behavior under the generator's assumptions.
+
+Source for this section (accessed 30 September 2026):
+
+- Microsoft, *FOCUS cost and usage details file schema*: https://learn.microsoft.com/en-us/azure/cost-management-billing/dataset-schema/cost-usage-details-focus
